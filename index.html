@@ -81,10 +81,40 @@
 
     <!-- Creds (Portfolio) -->
     
-        <section id="portfolio" class="section portfolio">
-            <div class="card-container">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
+        <section id="creds" class="section portfolio">
+            <h2>Selected Works</h2>
+            <div class="portfolio-grid">
+                <!-- Vimeo Example -->
+                <div class="portfolio-item">
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/VIDEOID?h=HASH&title=0&byline=0&portrait=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Project Title</h3>
+                        <p>Sound Design & Mix</p>
+                    </div>
+                </div>
+
+                <!-- YouTube Example -->
+                <div class="portfolio-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEOID" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Project Title</h3>
+                        <p>Original Score & Sound Design</p>
+                    </div>
+                </div>
+
+                <!-- Add more portfolio-items as needed -->
             </div>
         </section>
 
@@ -126,9 +156,32 @@
         </section>
 
     <!-- Get in Touch (Contact) -->
-
-        <section>
-
+        <section id="contact" class="section contact">
+            <div class="contact-container">
+                <h2>Let's Connect</h2>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </section>
 
     </main>
