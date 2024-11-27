@@ -1,0 +1,51 @@
+/* all mobile / Base Styles */
+@media (min-width: 0px) {
+
+        /* Reel - mobile */
+
+        .reel-banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            /* background: url("assets/leaf.jpg") no-repeat center center; */
+            background-color: black;
+            background-size: cover;
+            /* padding: 7rem 1.2rem; */
+            min-height: 70vh;
+            position: relative;
+        }
+    
+        .reel-banner h1 {
+            font-size: 2rem;
+            color: white;
+        }
+    
+        .reel-banner iframe {
+            aspect-ratio: 16 / 9;
+        }
+    
+        .reel-video {
+            width: 90%;
+        }
+}
+
+
+
+
+/* all screens tablet and up */
+@media (min-width: 768px) {
+
+        /* Reel - tablet */
+
+        .reel-banner {
+            min-height: 700px;
+            padding: 150px 20px;
+        }
+    
+        .reel-container {
+            width: 70vw;
+            max-width: 900px;
+        }
+}

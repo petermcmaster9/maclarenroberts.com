@@ -1,0 +1,121 @@
+/* all mobile / Base Styles */
+@media (min-width: 0px) {
+
+    /* Bio - mobile */
+    
+    .bio {
+        min-height: 400px;
+    }
+
+    .bio-content-wrapper {
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bio-img-wrapper-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bio-img-wrapper-2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .bio-img-wrapper-3 {
+        max-width: 400px;
+    }
+
+    /* .img-wrapper {
+        width: 100%;
+    } */
+
+    .bio-img {
+        width: 100%
+    }
+
+    .bio-text-wrapper {
+        max-width: 70vw;
+    }
+
+    .bio-text-wrapper h2 {
+        margin: 20px 0;
+    }
+    .bio-text-wrapper p {
+        margin: 20px 0;
+    }
+}
+
+
+
+
+/* all screens tablet and up */
+@media (min-width: 768px) {
+
+        /* Bio */
+
+        .bio-content-wrapper {
+            margin: 60px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    
+        .bio-img-wrapper-1 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+    
+        .bio-img-wrapper-2 {
+            display: flex;
+    
+            min-width: 600px;
+            justify-content: space-around;
+        }
+    
+        .bio-img-wrapper-3 {
+            max-width: 400px;
+            gap: 30px;
+        }
+    
+        .bio-img-and-text {
+            display: flex;
+            gap: 40px;
+        }
+    
+        .bio-img-1 {
+            padding-right: 80px;
+            margin-bottom: 40px;
+        }
+    
+        .bio-img-2 {
+            padding-left: 20px;
+        }
+    
+        /* .img-wrapper {
+            width: 100%;
+        } */
+    
+        .bio-img {
+            width: 100%
+        }
+    
+        .bio-text-wrapper {
+            max-width: 500px;
+        }
+    
+        .bio-text-wrapper h2 {
+            margin: 20px 0;
+        }
+        .bio-text-wrapper p {
+            margin: 20px 0;
+        }
+}

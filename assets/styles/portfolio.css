@@ -1,0 +1,79 @@
+/* all mobile / Base Styles */
+@media (min-width: 0px) {
+
+        /* Creds (Portfolio) - mobile */
+    
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            /* bottom: -50px; */
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+}
+
+
+
+
+/* all screens tablet and up */
+@media (min-width: 768px) {
+
+        /* Creds (Portfolio) - tablet */
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .portfolio-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+         
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .portfolio-details {
+            padding: 1rem;
+        }
+        
+        .portfolio-details h3 {
+            margin: 0 0 0.5rem 0;
+        }
+        
+        .portfolio-details p {
+            margin: 0;
+            color: #666;
+        }
+}

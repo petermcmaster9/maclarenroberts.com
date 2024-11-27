@@ -1,0 +1,144 @@
+/* Mobile / Base Styles */
+@media (min-width: 0px) {
+
+        /* Navbar - mobile*/
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            align-items: center;
+            background-image: linear-gradient(#050306, #36363a);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        .navbar-main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    
+        .navbar .brand-img-wrapper {
+            width: 150px;
+            display: block;
+        }
+    
+        .navbar .brand-img-wrapper img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .navbar .toggle-button {
+            background-color: black;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            padding: 0.3rem;
+        }
+    
+        .toggle-button .bar {
+            width: 1.8rem;
+            height: 0.2rem;
+            background-color: white;
+        }
+    
+        .navbar-links {
+            display: none;
+            flex-direction: row;
+            gap: 2rem;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            transform: translateY(0%);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .navbar-links.active .brand-img-wrapper {
+            display: none;
+        }
+        
+        .navbar-links li {
+            text-align: center;
+            padding: 0.8rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-links a {
+            color: white;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4d4dff;
+            transition: width 0.3s ease;
+        }
+        
+        .navbar-links a:hover {
+            color: #8080ff;
+        }
+        
+        .navbar-links a:hover::after {
+            width: 100%;
+        }
+}
+
+
+
+
+/* all screens tablet and up */
+@media (min-width: 768px) {
+
+        /* Navbar - tablet */
+
+        .navbar {
+            padding: 0;
+            position: relative;
+            justify-content: center;
+        }
+    
+        .navbar .toggle-button {
+            display: none;
+        }
+    
+        .navbar-links {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            width: auto;
+            gap: 3rem;
+            padding: 1rem 0;
+        }
+}
