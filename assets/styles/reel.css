@@ -6,24 +6,50 @@
         .reel-banner {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             text-align: center;
             align-items: center;
             /* background: url("assets/leaf.jpg") no-repeat center center; */
             background-color: black;
             background-size: cover;
             /* padding: 7rem 1.2rem; */
-            min-height: 70vh;
+            height: 80vh;
             position: relative;
+
+            padding-top: 50px;
+            min-height: 600px;
+        }
+
+        .reel-content-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reel-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
         }
     
         .reel-banner h1 {
             font-size: 2rem;
             color: white;
         }
+
+        .reel-hr {
+            width: 80%;
+            border: 1px solid white;
+            margin-bottom: 1rem;
+        }
     
         .reel-banner iframe {
             aspect-ratio: 16 / 9;
+            padding: 0.3rem;
+            border: double 5px white;
         }
     
         .reel-video {
@@ -42,6 +68,7 @@
         .reel-banner {
             min-height: 700px;
             padding: 150px 20px;
+            padding-top: 0px;
         }
     
         .reel-container {

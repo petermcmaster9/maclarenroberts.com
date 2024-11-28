@@ -23,8 +23,11 @@
     <header>
         <nav class="navbar">
             <div class="navbar-main">
+                <div class="navbar-mobile-empty"></div>
                 <div class="brand-img-wrapper">
-                    <img class="brand-img" src="/assets/Logo.svg">
+                    <a href="#reel">
+                        <img class="navbar-img" src="/assets/Logo.svg">
+                    </a>
                 </div>
                 <a href="javascript:void(0);" class="toggle-button">
                     <span class="bar"></span>
@@ -35,8 +38,8 @@
             <ul class="navbar-links">
                 <li><a href="#reel">Reel</a></li>
                 <li><a href="#bio">Bio</a></li>
-                <li><a href="#creds">Creds</a></li>
-                <li><a href="#props">Props</a></li>
+                <li><a href="#credits">Credits</a></li>
+                <li><a href="#praise">Praise</a></li>
                 <li><a href="#contact">Let's Connect</a></li>
             </ul>
         </nav>
@@ -47,55 +50,64 @@
     <!-- Reel -->
 
         <section id="reel" class="section reel reel-banner">
-            <h1>Reel</h1>
-            <iframe class="reel-video" src="https://player.vimeo.com/video/841753667?autoplay=0&loop=1&title=0&byline=0&portrait=0" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowfullscreen 
-                    title="Mac Roberts' Sound Design Reel">
-            </iframe>
+            <div class="reel-content-wrapper">
+                <div class="section-header-text">
+                    <h2>Reel</h2>
+                </div>
+                <hr class="reel-hr"/>
+                <iframe class="reel-video" src="https://player.vimeo.com/video/841753667?autoplay=0&loop=1&title=0&byline=0&portrait=0" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowfullscreen 
+                        title="Mac Roberts' Sound Design Reel">
+                </iframe>
+            </div>
         </section>
     
     <!-- Bio Section -->
 
         <section id="bio" class="section bio">
             <div class="bio-content-wrapper">
-                <!-- <div class="bio-wrapper-1"> -->
-                    <div class="bio-img-wrapper-2">
-                        <div class="img-wrapper">
-                            <img class="bio-img" src="assets/leaf.jpg">
-                        </div>
+                <div class="section-header-text">
+                    <h2>Bio</h2>
+                </div>
+                <hr class="reel-hr"/>
+                <div class="bio-img-wrapper">
+                        <img class="bio-img" src="assets/leaf.jpg">
+                </div>
+                <div class="bio-text-wrapper">
+                    <p>Hi, I'm Mac 👋🏼 </p>
+                    <p>I'm a sound designer and audio engineer based in Los Angeles. I've worked on a wide range of projects, from narrative films to video games, and I'm always looking for my next challenge.</p>
+                    <div class="bio-text-wrapper-list">
+                        <ul>
+                            <li>Post Production Audio</li>
+                            <li>Sound Design</li>
+                            <li>Original Score</li>
+                        </ul>
                     </div>
-                    <div class="bio-img-and-text">
-                        <div class="bio-img-wrapper-3">
-                            <div class="img-wrapper bio-img-1">
-                                <img class="bio-img" src="assets/leaf.jpg">
-                            </div>
-                            <div class="img-wrapper bio-img-2">
-                                <img class="bio-img" src="assets/leaf.jpg">
-                            </div>
-                        </div>
-                        <div class="bio-text-wrapper">
-                            <h2>Bio</h2>
-                            <p>Information about the Mac Guy :)</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                <!-- </div> -->
+                </div>
+                <div class="bio-img-wrapper">
+                    <img class="bio-img" src="assets/leaf.jpg">
+                </div>
+                <div class="bio-text-wrapper bio-text-wrapper-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
             </div>
         </section>
 
-    <!-- Creds (Portfolio) -->
-    
-        <section id="creds" class="section portfolio">
-            <h2>Selected Works</h2>
-            <div class="portfolio-grid">
+    <!-- Credits (Portfolio) -->
+
+        <section id="portfolio" class="section portfolio">
+            <div class="portfolio-content-wrapper">
+                <div class="section-header-text">
+                    <h2>Portfolio</h2>
+                </div>
+                <hr class="reel-hr"/>
+
                 <!-- Vimeo Example -->
                 <div class="portfolio-item">
                     <div class="video-container">
-                        <iframe src="https://player.vimeo.com/video/VIDEOID?h=HASH&title=0&byline=0&portrait=0" 
+                        <iframe src="https://player.vimeo.com/video/841753667?autoplay=0&loop=1&title=0&byline=0&portrait=0" 
                                 frameborder="0" 
                                 allow="autoplay; fullscreen; picture-in-picture" 
                                 allowfullscreen>
@@ -103,7 +115,8 @@
                     </div>
                     <div class="portfolio-details">
                         <h3>Project Title</h3>
-                        <p>Sound Design &amp; Mix</p>
+                        <h4>Sound Design &amp; Mix</h4>
+                        <p>A captivating short film that required intricate sound design to bring its surreal world to life. Created detailed ambient soundscapes and crafted unique sound effects to enhance the storytelling. Delivered a polished final mix that balanced dialogue, effects, and music.</p>
                     </div>
                 </div>
 
@@ -118,19 +131,38 @@
                     </div>
                     <div class="portfolio-details">
                         <h3>Project Title</h3>
-                        <p>Original Score & Sound Design</p>
+                        <h4>Original Score &amp; Sound Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                 </div>
 
-                <!-- Add more portfolio-items as needed -->
+                <!-- Vimeo Example -->
+                <div class="portfolio-item">
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/841753667?autoplay=0&loop=1&title=0&byline=0&portrait=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>Project Title</h3>
+                        <h4>Post Production Mastering</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
 
-    <!-- Props (Testimonials) -->
+    <!-- praise (Testimonials) -->
 
-        <section>
-            <div class="testimonials-container">
+        <section id="praise" class="section testimonials praise">
+            <div class="testimonials-content-wrapper">
+                <div class="section-header-text">
+                    <h2>Praise</h2>
+                </div>
+                <hr class="reel-hr"/>
                 <div class="testimonial-card">
                     <div class="testimonial-img-wrapper">
                         <img src="assets/leaf.jpg" alt="Testimonial 1" class="testimonial-img">
@@ -198,6 +230,9 @@
     <footer>
         <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
-<script src="script.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/navbarMobileScrollHide.js"></script>
+    <script src="assets/scripts/navbarMobileToggle.js"></script>
 </body>
 </html>

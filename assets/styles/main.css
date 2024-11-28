@@ -12,7 +12,12 @@ body, ul, li, a, p {
     text-decoration: none;
 }
 
-/* Reset margins and padding for all */
+/* Section Styles */
 .section {
     width: 100vw;
+}
+
+.section-header-text {
+    font-size: 2rem;
+    color: #ddd;
 }
