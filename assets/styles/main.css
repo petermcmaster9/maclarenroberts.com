@@ -20,4 +20,6 @@ body, ul, li, a, p {
 .section-header-text {
     font-size: 2rem;
     color: #ddd;
+    margin: 0 auto;
+    padding-top: 4rem;
 }
