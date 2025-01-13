@@ -1,3 +1,4 @@
+/* -- DESKTOP -- */
 .hero {
     display: flex;
     min-height: 100vh;
@@ -54,6 +55,7 @@
     }
 }
 
+/* -- TABLET -- */
 @media only screen and (max-width: 768px) {
     .container .box {
         width: 200px;
@@ -61,6 +63,7 @@
     }
 }
 
+/* -- MOBILE -- */
 @media only screen and (max-width: 480px) {
     .container .box {
         width: 150px;
