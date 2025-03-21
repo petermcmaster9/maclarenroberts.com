@@ -1,4 +1,7 @@
-/* Reset margins and padding for all */
+/* ------------------------------------------------------------ */
+/* Reset html globals */
+/* ------------------------------------------------------------ */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +15,79 @@ body, ul, li, a, p {
     text-decoration: none;
 }
 
+
+/* ------------------------------------------------------------ */
+/* Fonts */
+/* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kirang';
+    src: url('/assets/fonts/Kirang_Haerang/KirangHaerang-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marhey';
+    src: url('/assets/fonts/Marhey/Marhey-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ------------------------------------------------------------ */
 /* Custom Properties */
+/* ------------------------------------------------------------ */
+
+:root {
+    /* Fonts */
+    --font-primary: 'Raleway', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Colors */
+    --color-primary: #131313;
+    --color-secondary: #F2F2F2;
+    --color-tertiary: #2B1346;
+    --color-quaternary: #FAF5FF;
+    --color-accent: #71BAC5;
+
+    /* Breakpoints */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 1024px;
+    --breakpoint-desktop: 1440px;
+}
