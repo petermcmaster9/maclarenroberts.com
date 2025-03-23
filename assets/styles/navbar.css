@@ -7,7 +7,7 @@
     width: 100vw;
     height: clamp(80px, 15vh, 160px);
     background-color: black;
-    
+    position: relative;  /* for dropdown */
 }
 
 /* Logo */
@@ -34,7 +34,7 @@
     height: 100%;
 }
 
-.navbar__link {
+.navbar__link {  /* links */
     position: relative;  /* for underline */
     list-style: none;
     padding: clamp(4px, 1vw, 30px);
@@ -46,7 +46,7 @@
     transition: color 0.3s ease-in-out;
 }
 
-.navbar__link--underline {  /* underline */
+.navbar__link--underline {  /* underlines */
     display: block;
     position: absolute;
     width: 0;
@@ -69,4 +69,97 @@
 
 .navbar__link:active .navbar__link--underline {
     width: 80%;
+}
+
+.navbar__toggle {  /* Dropdown toggle button */
+    display: none; /* Hidden by default on desktop */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 20px;  /* Add padding for larger clickable area */
+    width: 60px;    /* Set explicit width */
+    height: 60px;   /* Set explicit height */
+    z-index: 10;
+
+    position: relative; /* Ensure proper stacking context */
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__hamburger,
+.navbar__hamburger::before,
+.navbar__hamburger::after {
+    content: '';
+    display: block;
+    background: var(--color-quaternary);
+    height: 3px;
+    width: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__hamburger::before {
+    transform: translateY(-10px);
+}
+
+.navbar__hamburger::after {
+    transform: translateY(7px);
+}
+
+/* X animation when menu is open */
+.navbar__toggle.active .navbar__hamburger {
+    background: transparent;
+}
+
+.navbar__toggle.active .navbar__hamburger::before {
+    transform: rotate(45deg);
+}
+
+.navbar__toggle.active .navbar__hamburger::after {
+    transform: rotate(-45deg) translateY(-3px) translateX(3px);
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar__logo {
+        padding-right: 20vw;
+    }
+    
+    .navbar__toggle {
+        display: flex; /* Show on mobile */
+    }
+    
+    .navbar__navlist {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        height: auto;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        z-index: 5;
+        padding: 20px 0;
+    }
+    
+    .navbar__navlist.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar__link {
+        display: inline-block;
+        margin: 0;
+        padding: 10px 0;
+        padding-top: 8px;
+    }
 }
