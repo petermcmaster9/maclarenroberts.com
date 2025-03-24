@@ -7,7 +7,17 @@
     width: 100vw;
     height: clamp(80px, 15vh, 160px);
     background-color: black;
-    position: relative;  /* for dropdown */
+    /* position: relative;  /* for dropdown */
+
+    position: fixed;  /* for mobile sticky navbar */
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.navbar--hidden {
+    transform: translateY(-100%);
 }
 
 /* Logo */
