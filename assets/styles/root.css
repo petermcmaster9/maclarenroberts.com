@@ -80,7 +80,7 @@ body, ul, li, a, p {
     --font-weight-bold: 700;
 
     /* Colors */
-    --color-primary: #131313;
+    --color-primary: #272727;
     --color-secondary: #F2F2F2;
     --color-tertiary: #2B1346;
     --color-quaternary: #FAF5FF;
@@ -90,4 +90,30 @@ body, ul, li, a, p {
     --breakpoint-mobile: 768px;
     --breakpoint-tablet: 1024px;
     --breakpoint-desktop: 1440px;
+}
+
+/* ------------------------------------------------------------ */
+/* Animations */
+/* ------------------------------------------------------------ */
+
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

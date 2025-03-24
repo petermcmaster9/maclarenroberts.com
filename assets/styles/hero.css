@@ -1,7 +1,52 @@
-.main__hero {
+.hero {
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    display: block;
+    background: linear-gradient(to bottom, black, var(--color-primary));
     position: absolute;
+
+    padding-top: clamp(80px, 15vh, 160px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: clamp(20px, 10vh, 100px);
+
+    animation: fadeIn 1.2s ease-in forwards;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    text-decoration: none;
+
+    color: var(--color-secondary);
+}
+
+.hero__title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 3.5vw, 4rem);  /* Larger, more impressive text */
+    color: var(--color-secondary);
+    margin: 0.5rem 0;  /* Space between lines */
+    letter-spacing: 0.1em;  /* Elegant letter spacing */
+    
+    /* Add staggered animation for each title */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.6s ease-in forwards;
+}
+
+.hero__video {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    animation: fadeIn 1s forwards;  
 }
