@@ -28,7 +28,7 @@
     font-size: clamp(1.2rem, 1.8vw, 1.4rem);
     text-decoration: none;
 
-    color: var(--color-accent);
+    color: var(--color-secondary);
 
     z-index: 1;
 }
