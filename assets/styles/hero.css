@@ -29,8 +29,6 @@
     text-decoration: none;
 
     color: var(--color-secondary);
-
-    z-index: 1;
 }
 
 .hero__title {
