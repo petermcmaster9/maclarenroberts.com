@@ -3,16 +3,18 @@
     width: 100vw;
     background: linear-gradient(to bottom, black, var(--color-primary));
     position: absolute;
-
+    top: 0;
+    left: 0;
+    z-index: 1;
     padding-top: clamp(80px, 15vh, 160px);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
-.hero__text {
+.hero__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,30 +25,50 @@
 
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.4rem);
     text-decoration: none;
 
-    color: var(--color-secondary);
+    color: var(--color-accent);
+
+    z-index: 1;
 }
 
 .hero__title {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: clamp(2rem, 3.5vw, 4rem);  /* Larger, more impressive text */
-    color: var(--color-secondary);
-    margin: 0.5rem 0;  /* Space between lines */
-    letter-spacing: 0.1em;  /* Elegant letter spacing */
+    letter-spacing: 0.08em;  /* Elegant letter spacing */
     
     /* Add staggered animation for each title */
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 1.6s ease-in forwards;
+
+    padding: 0 20vw;
+    text-align: center;
+
 }
 
 .hero__video {
+    align-self: center;
+
     width: 95%;
-    height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
     animation: fadeIn 1s forwards;  
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .hero__video {
+        width: 80%;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .hero__video {
+        width: 60%;
+        max-width: 1200px;
+    }
 }
