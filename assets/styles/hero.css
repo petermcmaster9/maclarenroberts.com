@@ -33,11 +33,11 @@
 
 .hero__title {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: clamp(2rem, 3.5vw, 4rem);  /* Larger, more impressive text */
-    letter-spacing: 0.08em;  /* Elegant letter spacing */
+    font-weight: 200;
+    font-size: clamp(2rem, 3.5vw, 4rem);
+    letter-spacing: 0.08em;
     
-    /* Add staggered animation for each title */
+    /* staggered animation */
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 1.6s ease-in forwards;
@@ -54,6 +54,8 @@
     aspect-ratio: 16/9;
     object-fit: cover;
     animation: fadeIn 1s forwards;  
+
+    /* TODO: add white frame and pulse effect */
 }
 
 /* Tablet and larger screens */
