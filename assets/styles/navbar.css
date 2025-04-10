@@ -28,6 +28,11 @@
 
 .navbar__logo-img {
     height: 90%;
+    cursor: pointer;
+}
+
+.navbar__logo-img:hover {
+    cursor: pointer;
 }
 
 /* Navlist - Mobile (Default) */
@@ -65,6 +70,7 @@
     text-decoration: none;
     color: var(--color-quaternary);
     transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .navbar__link--underline {
