@@ -135,6 +135,7 @@
 @media (max-width: 768px) {
     .navbar {
         /* justify-content: space-between; */
+        top: 0;
     }
 
     .navbar__logo {
