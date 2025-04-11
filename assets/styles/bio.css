@@ -1,0 +1,20 @@
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio__title {
+    margin: 40px 0;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.bio__featured-image {
+    margin: 20px 0 5px 0;
+    width: 90%;
+    align-self: center;
+}
