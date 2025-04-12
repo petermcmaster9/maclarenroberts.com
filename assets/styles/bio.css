@@ -3,6 +3,36 @@
     flex-direction: column;
 }
 
+.bio__mixed-media {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .bio__mixed-media {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .bio__image-featured,
+    .bio__image {
+        width: 45%;
+        margin: 0;
+    }
+
+    .bio__text {
+        width: 45%;
+    }
+}
+
+
+.--row-reversed {
+    flex-direction: row-reverse;
+}
+
 .bio__title {
     margin: 40px 0;
 
