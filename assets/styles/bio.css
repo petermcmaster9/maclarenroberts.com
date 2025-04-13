@@ -7,7 +7,7 @@
 .bio__mixed-media {
     display: flex;
     flex-direction: column;
-    width: clamp(300px, 85vw, 1400px)
+    width: clamp(240px, 85vw, 1400px)
 }
 
 /* Tablet and larger screens */
