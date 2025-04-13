@@ -1,11 +1,13 @@
 .bio {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .bio__mixed-media {
     display: flex;
     flex-direction: column;
+    width: clamp(300px, 85vw, 1400px)
 }
 
 /* Tablet and larger screens */
@@ -26,12 +28,34 @@
     .bio__text {
         width: 45%;
     }
+
+    .--row-reverse-m-l {
+        flex-direction: row-reverse;
+    }
 }
 
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .bio__mixed-media {
+        gap: 80px;
+        padding: 0 80px;
+        margin: 40px 0;
+    }
 
-.--row-reversed {
-    flex-direction: row-reverse;
+    .bio__image-featured,
+    .bio__image {
+        width: 40%;
+    }
+
+    .bio__text {
+        width: 40%;
+    }
+
+    .--row-reverse-m-l{
+        flex-direction: row-reverse;
+    }
 }
+
 
 .bio__title {
     margin: 40px 0;
