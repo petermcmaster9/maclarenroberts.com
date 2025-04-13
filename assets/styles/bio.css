@@ -50,19 +50,15 @@
     .bio__text {
         width: 40%;
     }
-
-    .--row-reverse-m-l{
-        flex-direction: row-reverse;
-    }
 }
 
 
 .bio__title {
-    margin: 40px 0;
+    margin: 40px 20px;
 
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 200;
     color: var(--color-primary);
     text-align: center;
 }

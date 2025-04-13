@@ -1,0 +1,41 @@
+.projects {
+    background-color: green;
+}
+
+.projects__title h2{
+    padding: 40px 0 0 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 200;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.projects__grid {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    margin: 0 5vw;
+    
+    /* Mobile first - single column */
+    grid-template-columns: 1fr;
+    
+    /* Tablet and up - 2x3 grid */
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        margin: 0 10vw;
+    }
+}
+  
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 95%;
+    max-width: 550px;
+    margin: 40px 0;
+}

@@ -1,23 +1,22 @@
 .testimonials {
-    padding: 4rem 1rem;
     background-color: yellow;
     display: flex;
     flex-direction: column;
 }
 
-.testimonials__title {
-    margin: 40px 0;
+.testimonials__title h2{
+    margin: 40px 20px;
 
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 200;
     color: var(--color-primary);
     text-align: center;
 }
 
 .testimonials__carousel {
     position: relative;
-    max-width: 1200px;
+    max-width: 98vw;
     margin: 0 auto;
     padding: 0 40px;
     overflow: hidden;
@@ -67,6 +66,10 @@
 
 /* Tablet and Desktop styles */
 @media (min-width: 768px) {
+    .testimonials__carousel {
+        width: 1400px;
+    }
+
     .testimonials__card {
         flex: 0 0 calc((100% - 4rem) / 3); /* Show 3 cards */
     }
