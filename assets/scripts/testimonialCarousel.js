@@ -1,9 +1,9 @@
 class TestimonialCarousel {
     constructor() {
-        this.track = document.querySelector('.testimonial__track');
+        this.track = document.querySelector('.testimonials__track');
         this.cards = Array.from(this.track.children);
-        this.nextButton = document.querySelector('.testimonial__button.next');
-        this.prevButton = document.querySelector('.testimonial__button.prev');
+        this.nextButton = document.querySelector('.testimonials__button.next');
+        this.prevButton = document.querySelector('.testimonials__button.prev');
         
         this.currentIndex = 0;
         this.totalCards = this.cards.length;
