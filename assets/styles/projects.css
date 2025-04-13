@@ -2,7 +2,7 @@
     background-color: green;
 }
 
-.projects__title h2{
+.projects__title h2 {
     padding: 40px 0 0 0;
     font-family: 'Nunito Sans', sans-serif;
     font-size: clamp(2rem, 4vw, 5rem);
@@ -29,7 +29,7 @@
         margin: 0 10vw;
     }
 }
-  
+
 .projects__card {
     display: flex;
     flex-direction: column;
@@ -38,4 +38,85 @@
     width: 95%;
     max-width: 550px;
     margin: 40px 0;
+}
+
+.projects__video-container {
+    width: 90%;
+    align-self: center;
+    aspect-ratio: 16/9;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.projects__card p {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.projects__card h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: clamp(1.4rem, 3.2vw, 3rem);
+    z-index: 2;
+}
+
+.projects__video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.pulse-projects {
+    background-color: rgba(255, 255, 255, 0.6);;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    animation: pulseEffectProjects 9s infinite ease-out;
+    opacity: 0;
+}
+
+.pulse1 {
+    animation-delay: 0s;
+}
+
+.pulse2 {
+    animation-delay: 3s;
+}
+
+.pulse3 {
+    animation-delay: 6s;
+}
+
+@keyframes pulseEffectProjects {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.2, 1.4);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    @keyframes pulseEffectProjects {
+        0% {
+            transform: scale(1);
+            opacity: 0.6;
+        }
+        100% {
+            transform: scale(1.12, 1.22);
+            opacity: 0;
+        }
+    }
 }
