@@ -3,7 +3,7 @@
 }
 
 .projects__title h2 {
-    padding: 40px 0 0 0;
+    padding-top: 60px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: clamp(2rem, 4vw, 5rem);
     font-weight: 200;
@@ -41,7 +41,7 @@
 }
 
 .projects__video-container {
-    width: 100%;
+    width: 80%;
     align-self: center;
     aspect-ratio: 16/9;
     background-color: rgba(255, 255, 255, 0.8);
@@ -60,7 +60,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: clamp(1.4rem, 3.2vw, 3rem);
+    font-size: clamp(1.4rem, 3.2vw, 2.6rem);
     z-index: 2;
 }
 
