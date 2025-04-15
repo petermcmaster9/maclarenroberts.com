@@ -17,6 +17,7 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .contact__form-group {
@@ -65,12 +66,12 @@
 
 @media (min-width: 768px) {
     .contact {
-        margin: 4rem 2rem;
+        border: none;
     }
 }
 
 @media (min-width: 1024px) {
     .contact {
-        margin: 4rem 4rem;
+        border: none;
     }
 }
