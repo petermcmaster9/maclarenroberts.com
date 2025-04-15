@@ -68,14 +68,18 @@
 
 .pulse1 {
     animation-delay: 0s;
+    overflow: hidden;
 }
 
 .pulse2 {
     animation-delay: 3s;
+    overflow: hidden;
 }
 
 .pulse3 {
     animation-delay: 6s;
+    /* TODO */
+    /* overflow: hidden; */  /* SOMETHING STRANGE ABOUT left-right SCROLL AND THESE ANIMATIONS? IDK NEED TO REDUCE WHITESPACE left-right MOBILE VIEW */
 }
 
 @keyframes pulseEffect {
