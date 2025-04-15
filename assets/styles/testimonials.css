@@ -4,16 +4,6 @@
     flex-direction: column;
 }
 
-.testimonials__title h2{
-    margin: 40px 20px;
-
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 5rem);
-    font-weight: 200;
-    color: var(--color-primary);
-    text-align: center;
-}
-
 .testimonials__carousel {
     position: relative;
     max-width: 98vw;

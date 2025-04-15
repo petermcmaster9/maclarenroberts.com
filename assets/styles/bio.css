@@ -10,6 +10,12 @@
     width: clamp(240px, 85vw, 1400px)
 }
 
+.bio__featured-image {
+    margin: 20px 0 5px 0;
+    width: 90%;
+    align-self: center;
+}
+
 /* Tablet and larger screens */
 @media (min-width: 768px) {
     .bio__mixed-media {
@@ -50,21 +56,4 @@
     .bio__text {
         width: 40%;
     }
-}
-
-
-.bio__title {
-    margin: 40px 20px;
-
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 5rem);
-    font-weight: 200;
-    color: var(--color-primary);
-    text-align: center;
-}
-
-.bio__featured-image {
-    margin: 20px 0 5px 0;
-    width: 90%;
-    align-self: center;
 }
