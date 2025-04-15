@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    margin: 4rem 1rem;
 }
 
 .contact__title {
