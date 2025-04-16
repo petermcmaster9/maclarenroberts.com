@@ -26,23 +26,42 @@
     border-radius: 8px;
     background: white;
     overflow: hidden;
+
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--color-primary);
 }
 
-.testimonials__card-head {
+.testimonials__author {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     
 }
 
-.testimonials__headshot {
-    max-width: 100px;
+.testimonials__author-headshot {
+    width: 80%;
+    margin-bottom: 8px;
+    align-self: center;
 }
 
-
-.testimonials__author-info-verified {
+.testimonials__author-name-verified {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-grow: 1;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.testimonials__author-name {
+    font-size: clamp(1rem, 5vw, 4rem);
+}
+
+.testimonials__author-title {
+    padding-right: clamp(2px, 2vw, 20px);
+    font-size: clamp(0.8rem, 4vw, 3rem);
+    font-weight: 200;
+    text-align: right;
 }
 
 
