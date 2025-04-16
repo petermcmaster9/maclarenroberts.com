@@ -28,6 +28,26 @@
     overflow: hidden;
 }
 
+.testimonials__card-head {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.testimonials__headshot {
+    max-width: 100px;
+}
+
+
+.testimonials__author-info-verified {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
 .testimonials__button {
     position: absolute;
     top: 50%;
