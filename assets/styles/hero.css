@@ -93,9 +93,76 @@
     }
 }
 
+.hero__contact-top {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.hero__empty-60px {
+    display: block;
+}
+
+.hero__contact-email {
+    color: white;
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+
+.hero__contact-email.copied {
+    color: var(--color-accent); /*accent the highlight */
+}
+
+.hero__contact-email:hover {
+    cursor: pointer;
+}
+
+.hero__contact-email-copy {
+    max-width: 20px;
+    margin-left: 15px;
+    filter: brightness(1) invert(1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.hero__contact-email-copy:hover,
+.hero__contact-email:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+}
+
+.hero__contact-email-copy:active,
+.hero__contact-email:active {
+    transition: transform 0.2s ease;
+    transform: scale(0.95);
+}
+
+.hero__contact-email-copied {
+    margin-left: 8px;
+    color: white;
+    font-size: clamp(0.6rem, 4vw, 1.0rem);
+    align-self: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero__contact-email-copied.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 .hero__contact-button {
     align-self: center;
-    margin-top: 20vh;
+    margin-top: 20px;
     padding: 10px 20px;
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 8px;
@@ -162,7 +229,7 @@
 
     .hero__video-container {
         width: 60%;
-        max-width: 1200px;
+        max-width: 800px;
         margin-top: clamp(100px, 10vh, 280px);
     }
 
@@ -178,7 +245,7 @@
     }
 
     .hero__contact-button {
-        margin-top: 15vh;
+        margin-top: 20px;;
         margin-bottom: 10vh;
         font-size: 1.8rem;
         font-family: 'Nunito Sans', sans-serif;
