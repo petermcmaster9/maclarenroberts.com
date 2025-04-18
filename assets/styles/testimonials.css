@@ -29,6 +29,9 @@
 
     font-family: 'Nunito Sans', sans-serif;
     color: var(--color-primary);
+
+    border: 4px double;
+    border-color: black;
 }
 
 .testimonials__author {
@@ -40,8 +43,12 @@
 
 .testimonials__author-headshot {
     width: 80%;
+    max-width: 180px;
     margin-bottom: 8px;
     align-self: center;
+    border-radius: 8px;
+    border: 2px double;
+    border-color: var(--color-secondary);
 }
 
 .testimonials__author-name-verified {
