@@ -95,23 +95,30 @@
 
 .hero__contact-top {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     color: white;
     align-self: center;
     margin-top: 40px;
 }
 
-.hero__empty-60px {
-    display: block;
+.hero__empty.--w60px {
+    display: none;
+}
+
+.hero__contact-email-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .hero__contact-email {
     color: white;
-    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     align-self: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .hero__contact-email.copied {
@@ -124,26 +131,27 @@
 
 .hero__contact-email-copy {
     max-width: 20px;
-    margin-left: 15px;
+    margin-left: 5px;
     filter: brightness(1) invert(1);
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
 }
 
 .hero__contact-email-copy:hover,
 .hero__contact-email:hover {
-    transition: transform 0.2s ease;
+    transition: transform 0.4s ease;
     transform: scale(1.05);
 }
 
 .hero__contact-email-copy:active,
 .hero__contact-email:active {
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
     transform: scale(0.95);
 }
 
 .hero__contact-email-copied {
-    margin-left: 8px;
+    margin-left: 0;
+    margin-top: 4px;
     color: white;
     font-size: clamp(0.6rem, 4vw, 1.0rem);
     align-self: center;
@@ -175,6 +183,10 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .hero__contact-button::after {
@@ -242,6 +254,19 @@
             transform: scale(1.1, 1.18);
             opacity: 0;
         }
+    }
+
+    .hero__contact-top {
+        flex-direction: row;
+    }
+
+    .hero__empty.--w60px {
+        display: block;
+    }
+
+    .hero__contact-email-copied {
+        margin-left: 8px;
+        margin-top: 0;
     }
 
     .hero__contact-button {

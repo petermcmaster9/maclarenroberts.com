@@ -34,7 +34,7 @@
                 <span class="navbar__hamburger"></span>
             </button>
             <ul class="navbar__navlist">
-                <li><a href="#reel" class="navbar__link">Reel<span class="navbar__link--underline"></span></a></li>
+                <li><a href="#hero" class="navbar__link">Reel<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#bio" class="navbar__link">Bio<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#testimonials" class="navbar__link">Testimonials<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#projects" class="navbar__link">Projects<span class="navbar__link--underline"></span></a></li>
@@ -45,7 +45,7 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero__video-container">
                 <div class="hero__video-cover"></div>
                 <iframe class="hero__video" src="https://player.vimeo.com/video/841753667" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -55,15 +55,17 @@
             </div>
             <div class="hero__contact-top">
                 <div class="hero__empty --w60px"></div>
-                <p class="hero__contact-email">maclarenroberts@gmail.com</p>
-                <img class="hero__contact-email-copy" src="assets/icons/copy.svg">
+                <div class="hero__contact-email-wrapper">
+                    <p class="hero__contact-email">maclarenroberts@gmail.com</p>
+                    <img class="hero__contact-email-copy" src="assets/icons/copy.svg">
+                </div>
                 <p class="hero__contact-email-copied">copied</p>
             </div>
-            <button class="hero__contact-button">Contact</button>
+            <a href="#contact" class="hero__contact-button">Contact</a>
         </section>
 
         <!-- BIO -->
-        <section class="bio">
+        <section id="bio" class="bio">
             <div class="bio__mixed-media">
                 <img src="assets/images/bio-featured-image.jpg" alt="Maclaren Roberts" class="bio__image --featured-image">
                 <div class="bio__text">
@@ -113,7 +115,7 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <h2 class="testimonials__title section__title">Testimonials</h2>
             <div class="testimonials__carousel">
 
@@ -188,7 +190,7 @@
         </section>
 
         <!-- PROJECTS -->
-        <section class="projects">
+        <section id="projects" class="projects">
 
             <h2 class="projects__title section__title">Projects</h2>
 
@@ -266,7 +268,7 @@
 
 
         <!-- CONTACT -->
-        <section class="contact">
+        <section id="contact" class="contact">
             <form class="contact__form">
                 <h2 class="contact__title section__title">Contact</h2>
                 <div class="contact__form-group">
@@ -286,7 +288,7 @@
 
                 <button type="submit" class="contact__submit-button">Send Message</button>
             </form>
-            <div class="hero__contact-top">
+            <div class="hero__contact-top" style="margin-top: 0;">
                 <div class="hero__empty --w60px"></div>
                 <p class="hero__contact-email">maclarenroberts@gmail.com</p>
                 <img class="hero__contact-email-copy" src="assets/icons/copy.svg">
