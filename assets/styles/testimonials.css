@@ -20,7 +20,7 @@
 }
 
 .testimonials__card {
-    flex: 0 0 calc(100%); /* Mobile first - full width */
+    flex: 0 0 calc(100%); /* Mobile first */
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
