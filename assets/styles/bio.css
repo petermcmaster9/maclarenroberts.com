@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.bio__title {
+    color: var(--color-primary);
+}
+
 .bio__mixed-media {
     display: flex;
     flex-direction: column;
