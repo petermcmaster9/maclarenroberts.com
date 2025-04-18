@@ -1,5 +1,5 @@
 .testimonials {
-    background-color: yellow;
+    background-color: var(--color-tertiary);
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +24,7 @@
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background: white;
+    background: var(--color-accent);
     overflow: hidden;
 
     font-family: 'Nunito Sans', sans-serif;
@@ -54,15 +54,40 @@
 }
 
 .testimonials__author-name {
-    font-size: clamp(1rem, 5vw, 4rem);
+    font-size: clamp(1rem, 5vw, 2.4rem);
 }
 
 .testimonials__author-title {
     padding-right: clamp(2px, 2vw, 20px);
-    font-size: clamp(0.8rem, 4vw, 3rem);
+    font-size: clamp(0.8rem, 4vw, 1.4rem);
     font-weight: 200;
     text-align: right;
 }
+
+.testimonials__author-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.testimonials__author-links img {
+    max-width: 20px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.testimonials__author-links img:hover {
+    transform: translateY(-4px);
+    opacity: 1;
+}
+
+.testimonials__author-links img:active {
+    transform: translateY(2px);
+}
+
 
 
 
