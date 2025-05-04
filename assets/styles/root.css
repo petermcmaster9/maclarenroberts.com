@@ -123,9 +123,9 @@ section, footer {
 
     /* Colors */
     --color-primary: #272727;
-    --color-secondary: #F2F2F2;
+    --color-secondary: #cccccc;
     --color-tertiary: #2B1346;
-    --color-quaternary: #FAF5FF;
+    --color-4: #988;
     --color-accent: #71BAC5;
 
     /* Breakpoints */
