@@ -26,6 +26,8 @@
 }
 
 .footer__social-icon {
+    color: white;
+    fill: white;
     width: 24px;
     height: 24px;
     transition: opacity 0.2s ease;
@@ -40,6 +42,7 @@
     font-size: 0.9rem;
     text-align: center;
 }
+
 
 /* Tablet and desktop styles */
 @media (min-width: 768px) {
