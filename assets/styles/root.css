@@ -39,13 +39,13 @@ section, footer {
 }
 
 .section__title {
-    padding: 40px 20px;
+    text-align: center;
 
     font-family: 'Nunito Sans', sans-serif;
     font-size: clamp(2rem, 4vw, 4.4rem);
     font-weight: 200;
+
     color: var(--color-secondary);
-    text-align: center;
 }
 
 .--text-link {
