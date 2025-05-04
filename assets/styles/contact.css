@@ -19,7 +19,7 @@
     background-color: var(--color-tertiary);
     border: 2px solid;
     border-radius: 8px;
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.9);
+    filter: drop-shadow(0 0 10px #000);
     margin: 6rem 0 2rem 0;
 }
 
