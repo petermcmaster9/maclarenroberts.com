@@ -7,6 +7,7 @@
     left: 0;
     z-index: 1;
     padding-top: clamp(80px, 15vh, 160px);
+    padding-bottom: 15px;
 
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@
 
 .hero__video-container {
     align-self: center;
-    width: 92%;
+    width: 88%;
     aspect-ratio: 16/9;
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
@@ -270,8 +271,8 @@
     }
 
     .hero__contact-button {
-        margin-top: 20px;;
-        margin-bottom: 10vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 1.8rem;
         font-family: 'Nunito Sans', sans-serif;
         border: 5px double rgba(255, 255, 255, 0.8);

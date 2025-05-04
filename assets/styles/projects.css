@@ -12,6 +12,10 @@
     text-align: center;
 } */
 
+.projects__title {
+    padding: 60px 0 20px 0;
+}
+
 .projects__grid {
     display: grid;
     gap: 1rem;

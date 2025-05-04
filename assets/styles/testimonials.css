@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.testimonials__title {
+    padding: 40px;
+}
+
 .testimonials__carousel {
     position: relative;
     max-width: 98vw;
