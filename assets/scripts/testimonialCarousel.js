@@ -8,7 +8,7 @@ class TestimonialCarousel {
         this.currentIndex = 0;
         this.totalCards = this.cards.length;
         this.autoScrollInterval = null;
-        this.autoScrollDelay = 6000; // 6 seconds
+        this.autoScrollDelay = 8000; // 8 seconds
         this.userInteracted = false;
         
         this.updateView();
