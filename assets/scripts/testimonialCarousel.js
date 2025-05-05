@@ -8,12 +8,12 @@ class TestimonialCarousel {
         this.currentIndex = 0;
         this.totalCards = this.cards.length;
         this.autoScrollInterval = null;
-        this.autoScrollDelay = 6000; // 3 seconds
+        this.autoScrollDelay = 6000; // 6 seconds
         this.userInteracted = false;
         
         this.updateView();
         this.setupEventListeners();
-        this.startAutoScroll();
+        // this.startAutoScroll();
     }
 
     startAutoScroll() {
@@ -44,18 +44,31 @@ class TestimonialCarousel {
 
     updateView() {
         // Calculate cards per view based on screen width
-        this.cardsPerView = window.innerWidth >= 768 ? 3 : 1;
+        if (window.innerWidth >= 1280) {        // large desktop
+            this.cardsPerView = 3;
+        } else if (window.innerWidth >= 768) {  // tablet‑ish
+            this.cardsPerView = 2;
+        } else {                                // mobile
+            this.cardsPerView = 1;
+        }
         
-        // Calculate single card width including gap
+        // Get the actual container width
+        const carouselContainer = this.track.parentElement;
+        const containerStyles = window.getComputedStyle(carouselContainer);
+        const paddingLeft = parseInt(containerStyles.paddingLeft, 10);
+        const paddingRight = parseInt(containerStyles.paddingRight, 10);
+
+        // Calculate available width accounting for container padding
+        const containerWidth = carouselContainer.clientWidth - paddingRight;
         const gap = 32; // 2rem = 32px
-        const containerWidth = this.track.parentElement.clientWidth - 80; // Account for parent padding
         
+        // Calculate card width based on cards per view and gap
         if (this.cardsPerView === 1) {
-            this.cardWidth = containerWidth;
-            this.slideAmount = this.cardWidth + gap;
+            this.cardWidth = Math.max(280, containerWidth - 40); // minimum width of 280px
+            this.slideAmount = containerWidth - 8;
         } else {
             // For desktop/tablet view
-            this.cardWidth = (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView;
+            this.cardWidth = Math.max(280, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
             this.slideAmount = this.cardWidth + gap;
         }
         
@@ -65,7 +78,7 @@ class TestimonialCarousel {
         });
         
         // Ensure current index is valid for new view
-        const maxIndex = this.totalCards - this.cardsPerView;
+        const maxIndex = Math.max(0, this.totalCards - this.cardsPerView);
         if (this.currentIndex > maxIndex) {
             this.currentIndex = maxIndex;
         }
@@ -97,7 +110,8 @@ class TestimonialCarousel {
     }
 
     moveToNextCard() {
-        if (this.currentIndex < this.totalCards - this.cardsPerView) {
+        const maxIndex = Math.max(0, this.totalCards - this.cardsPerView);
+        if (this.currentIndex < maxIndex) {
             this.currentIndex++;
             this.updateCardPositions();
         } else {
@@ -113,7 +127,7 @@ class TestimonialCarousel {
             this.updateCardPositions();
         } else {
             // Loop to end
-            this.currentIndex = this.totalCards - this.cardsPerView;
+            this.currentIndex = Math.max(0, this.totalCards - this.cardsPerView);
             this.updateCardPositions();
         }
     }

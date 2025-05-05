@@ -5,15 +5,16 @@
 }
 
 .testimonials__title {
-    padding: 40px;
+    padding-top: 2.4rem;
+    padding-bottom: 0.6rem;
 }
 
 .testimonials__carousel {
-    position: relative;
-    max-width: 98vw;
-    margin: 0 auto;
+    max-width: clamp(100%, 90vw, 1200px);
     padding: 0 40px;
     overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
 .testimonials__track {
@@ -24,18 +25,17 @@
 }
 
 .testimonials__card {
-    flex: 0 0 calc(100%); /* Mobile first */
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    flex: 0 0 auto;
+    height: auto;
+    padding: 0.6rem;
     background: var(--color-accent);
-    overflow: hidden;
-
-    font-family: 'Nunito Sans', sans-serif;
     color: var(--color-primary);
 
+    font-family: 'Nunito Sans', sans-serif;
     border: 4px double;
     border-color: black;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 10px #000);
 }
 
 .testimonials__author {
@@ -66,6 +66,11 @@
 
 .testimonials__author-name {
     font-size: clamp(1rem, 5vw, 2.4rem);
+    text-align: center;
+}
+
+.testimonials__author-name--leah {
+    padding-right: 1rem;
 }
 
 .testimonials__author-title {
@@ -89,12 +94,25 @@
     margin: 0 30px 0 0;
 }
 
+.testimonials__testimonial {
+    text-align: justify;
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+}
+
+.testimonials__testimonial--justin {
+    font-size: clamp(0.7rem, 3.8vw, 1.1rem);
+}
+
 .testimonials__author-links {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.testimonials__author-links--space {
+    margin-top: 4rem;
 }
 
 .testimonials__author-links img {
@@ -124,14 +142,18 @@
     height: 40px;
     cursor: pointer;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .testimonials__button.prev {
-    left: 0;
+    left: 10px;
 }
 
 .testimonials__button.next {
-    right: 0;
+    right: 10px;
 }
 
 .testimonials__wordcloud {
@@ -142,10 +164,17 @@
 /* Tablet and Desktop styles */
 @media (min-width: 768px) {
     .testimonials__carousel {
-        width: 1400px;
+        max-width: clamp(100%, 90vw, 1400px);
+        padding: 0 60px;
     }
 
     .testimonials__card {
-        flex: 0 0 calc((100% - 4rem) / 3); /* Show 3 cards */
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .testimonials__button {
+        width: 50px;
+        height: 50px;
     }
 }
