@@ -18,7 +18,7 @@
 }
 
 .testimonials__track {
-    padding-left: 1.5rem;
+    padding-left: 2.25rem;
     display: flex;
     flex-direction: row;
     transition: transform 0.9s ease-in-out;
