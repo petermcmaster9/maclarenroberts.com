@@ -52,25 +52,32 @@ class TestimonialCarousel {
             this.cardsPerView = 1;
         }
         
-        // Get the actual container width
+        // Get the Carousel Container width
         const carouselContainer = this.track.parentElement;
         const containerStyles = window.getComputedStyle(carouselContainer);
         const paddingLeft = parseInt(containerStyles.paddingLeft, 10);
         const paddingRight = parseInt(containerStyles.paddingRight, 10);
 
         // Calculate available width accounting for container padding
-        const containerWidth = carouselContainer.clientWidth - paddingRight;
-        const gap = 32; // 2rem = 32px
-        
+        const containerWidth = carouselContainer.clientWidth - paddingLeft - paddingRight;
+        const gap = parseInt(window.getComputedStyle(this.track).gap, 10);
+
         // Calculate card width based on cards per view and gap
         if (this.cardsPerView === 1) {
-            this.cardWidth = Math.max(280, containerWidth - 40); // minimum width of 280px
-            this.slideAmount = containerWidth - 8;
+            this.cardWidth = Math.max(260, containerWidth); // minimum width of 280px
+            this.slideAmount = this.cardWidth + gap;
         } else {
             // For desktop/tablet view
-            this.cardWidth = Math.max(280, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
+            this.cardWidth = Math.max(260, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
             this.slideAmount = this.cardWidth + gap;
         }
+        // unit tests ...
+        console.log(`Available container width (after padding) containerWidth: ${containerWidth}px`);
+        console.log(`carouselContainer.clientWidth ${carouselContainer.clientWidth}px`);
+        console.log(`paddingLeft ${paddingLeft}px`);
+        console.log(`paddingLRight ${paddingRight}px`);
+        console.log(`cardWidth: ${this.cardWidth}`);
+        console.log(`slideAmount: ${this.slideAmount}`);
         
         // Set width for each card
         this.cards.forEach(card => {

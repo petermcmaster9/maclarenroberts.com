@@ -10,8 +10,8 @@
 }
 
 .testimonials__carousel {
-    max-width: clamp(100%, 90vw, 1200px);
-    padding: 0 40px;
+    width: clamp(100%, 90vw, 1200px);
+    padding: 0 10px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -21,13 +21,39 @@
     display: flex;
     flex-direction: row;
     transition: transform 0.9s ease-in-out;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.testimonials__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials__button.prev {
+    left: 10px;
+}
+
+.testimonials__button.next {
+    right: 10px;
 }
 
 .testimonials__card {
     flex: 0 0 auto;
     height: auto;
-    padding: 0.6rem;
+    padding: 1rem;
+
     background: var(--color-accent);
     color: var(--color-primary);
 
@@ -65,7 +91,7 @@
 }
 
 .testimonials__author-name {
-    font-size: clamp(1rem, 5vw, 2.4rem);
+    font-size: clamp(1rem, 4vw, 2.4rem);
     text-align: center;
 }
 
@@ -75,7 +101,7 @@
 
 .testimonials__author-title {
     padding-right: clamp(2px, 2vw, 20px);
-    font-size: clamp(0.8rem, 4vw, 1.4rem);
+    font-size: clamp(0.8rem, 3vw, 1.4rem);
     font-weight: 200;
     text-align: right;
 }
@@ -131,31 +157,6 @@
     transform: translateY(2px);
 }
 
-.testimonials__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.testimonials__button.prev {
-    left: 10px;
-}
-
-.testimonials__button.next {
-    right: 10px;
-}
-
 .testimonials__wordcloud {
     align-self: center;
     width: clamp(120px, 10vw, 200px);
@@ -164,13 +165,13 @@
 /* Tablet and Desktop styles */
 @media (min-width: 768px) {
     .testimonials__carousel {
-        max-width: clamp(100%, 90vw, 1400px);
+        width: clamp(100%, 90vw, 1200px);
         padding: 0 60px;
     }
 
     .testimonials__card {
         height: auto;
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     .testimonials__button {
