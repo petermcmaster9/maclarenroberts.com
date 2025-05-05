@@ -64,10 +64,14 @@ class TestimonialCarousel {
 
         // Calculate card width based on cards per view and gap
         if (this.cardsPerView === 1) {
-            this.cardWidth = Math.max(260, containerWidth); // minimum width of 280px
+            this.cardWidth = Math.max(260, containerWidth - 1*gap); // minimum width of 280px
+            this.slideAmount = this.cardWidth + gap;
+        } else if (this.cardsPerView === 2) {
+            // For tablet view
+            this.cardWidth = Math.max(260, (containerWidth - gap - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
             this.slideAmount = this.cardWidth + gap;
         } else {
-            // For desktop/tablet view
+            // For tablet view
             this.cardWidth = Math.max(260, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
             this.slideAmount = this.cardWidth + gap;
         }

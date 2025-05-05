@@ -18,21 +18,23 @@
 }
 
 .testimonials__track {
+    padding-left: 1.5rem;
     display: flex;
     flex-direction: row;
     transition: transform 0.9s ease-in-out;
     gap: 3rem;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .testimonials__button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 50%;
-    width: 30px;
+    width: 40px;
     height: 40px;
     cursor: pointer;
     z-index: 10;
@@ -53,6 +55,7 @@
 .testimonials__card {
     flex: 0 0 auto;
     height: auto;
+    margin: 0 auto;
     padding: 1.4rem;
 
     background: var(--color-accent);
@@ -62,7 +65,7 @@
     border: 4px double;
     border-color: black;
     border-radius: 8px;
-    filter: drop-shadow(0 0 10px #000);
+    filter: drop-shadow(0 0 6px #000);
 }
 
 .testimonials__author {
@@ -92,18 +95,18 @@
     justify-content: center;
 }
 
+.testimonials__author-name-verified--leah {
+    gap: 1rem;
+}
+
 .testimonials__author-name {
     font-size: clamp(1rem, 4vw, 2.4rem);
     text-align: center;
 }
 
-.testimonials__author-name--leah {
-    padding-right: 1rem;
-}
-
 .testimonials__author-title {
     padding-right: clamp(2px, 2vw, 20px);
-    font-size: clamp(0.8rem, 3vw, 1.4rem);
+    font-size: clamp(0.8rem, 3.8vw, 1.4rem);
     font-weight: 200;
     text-align: right;
 }
@@ -124,11 +127,11 @@
 
 .testimonials__testimonial {
     text-align: justify;
-    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    font-size: clamp(0.8rem, 3.8vw, 1.2rem);
 }
 
 .testimonials__testimonial--justin {
-    font-size: clamp(0.7rem, 3.8vw, 1.1rem);
+    font-size: clamp(0.7rem, 3.7vw, 1.1rem);
 }
 
 .testimonials__author-links {
@@ -171,9 +174,14 @@
         padding: 0 30px;
     }
 
+    .testimonials__track {
+        padding-left: 1.5rem;
+    }
+
     .testimonials__card {
         height: auto;
         padding: 2rem;
+        filter: drop-shadow(0 0 10px #000);
     }
 
     .testimonials__button {
@@ -187,5 +195,9 @@
     .testimonials__carousel{
         width: clamp(280px, 90vw, 1400px);
         padding: 0 60px;
+    }
+
+    .testimonials__track {
+        padding-left: 0rem;
     }
 }
