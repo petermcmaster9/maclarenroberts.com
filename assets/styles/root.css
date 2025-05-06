@@ -50,7 +50,6 @@ section, footer {
     color: var(--color-secondary);
     margin: 0 auto;
     max-width: 600px;
-
 }
 
 .--text-link {
@@ -133,6 +132,7 @@ section, footer {
     --color-tertiary: #2B1346;
     --color-3-2: #291a39;
     --color-4: #a0c8e1;
+    --color-4-2: #c6e3f5;
     --color-accent: #71BAC5;
     --color-accent2: #83b9c2;
 
