@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar__link');
     let lastScrollTop = 0;
     const scrollThreshold = 400;
+    
+    // Handle navigation link clicks
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // 1s delay to allow the scroll to finish
+            setTimeout(() => {
+                navbar.classList.add('navbar--hidden');
+            }, 1000);
+        });
+    });
     
     window.addEventListener('scroll', function() {
         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
