@@ -45,9 +45,12 @@ section, footer {
 
     font-family: 'Nunito Sans', sans-serif;
     font-size: clamp(2.4rem, 6vw, 4.4rem);
-    font-weight: 300;
+    font-weight: 400;
 
     color: var(--color-secondary);
+    margin: 0 auto;
+    max-width: 600px;
+
 }
 
 .--text-link {
@@ -125,10 +128,13 @@ section, footer {
 
     /* Colors */
     --color-primary: #272727;
+    --color-1-2: #0f0f0f;
     --color-secondary: #cccccc;
     --color-tertiary: #2B1346;
-    --color-4: #9998a6;
+    --color-3-2: #291a39;
+    --color-4: #a0c8e1;
     --color-accent: #71BAC5;
+    --color-accent2: #83b9c2;
 
     /* Breakpoints */
     --breakpoint-mobile: 768px;

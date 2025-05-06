@@ -14,6 +14,7 @@
 
 .projects__title {
     padding: 60px 0 20px 0;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
 
 .projects__grid {

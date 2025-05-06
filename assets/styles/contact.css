@@ -8,6 +8,9 @@
 .contact__title {
     padding: 0;
     color: var(--color-secondary);
+    filter: drop-shadow(0 0 6px #111);
+    position: relative;
+    z-index: 3;
 }
 
 .contact__form {
@@ -16,7 +19,7 @@
     width: 88%;
     max-width: 600px;
     padding: 2rem;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-3-2);
     border: 2px solid;
     border-radius: 8px;
     filter: drop-shadow(0 0 10px #000);

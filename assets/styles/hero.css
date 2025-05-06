@@ -1,12 +1,12 @@
 .hero {
     height: clamp(800px, 100vh, 1400px);
     width: 100%;
-    background: linear-gradient(to bottom, black, var(--color-primary));
+    background: linear-gradient(to bottom, black, var(--color-4));
     position: relative;
     top: 0;
     left: 0;
     z-index: 1;
-    padding-top: clamp(80px, 15vh, 160px);
+    margin-top: clamp(80px, 15vh, 160px);
     padding-bottom: 15px;
 
     display: flex;
