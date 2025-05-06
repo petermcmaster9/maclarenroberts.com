@@ -189,15 +189,28 @@
         transform: none;
         opacity: 1;
         visibility: visible;
+        margin: 0;
         padding: 0;
         text-align: left;
+    }
+
+    .navbar__navlist li {
+        position: relative;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        width: 80%;
+        margin: 0 auto;
+        padding: 5vh 0;
+        flex-grow: 1;
     }
     
     .navbar__navlist li {
         padding: 0;
+        border-top: none;
         border-bottom: none;
         width: auto;
         margin: 0;
+        padding: 0 0;
     }
     
     .navbar__link {
