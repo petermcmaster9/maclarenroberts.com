@@ -13,7 +13,7 @@
 .contact__form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 88%;
     max-width: 600px;
     padding: 2rem;
     background-color: var(--color-tertiary);
