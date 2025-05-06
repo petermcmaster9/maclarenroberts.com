@@ -36,13 +36,14 @@ section, footer {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    padding: 2rem 0;
 }
 
 .section__title {
     text-align: center;
 
     font-family: 'Nunito Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 4.4rem);
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
     font-weight: 200;
 
     color: var(--color-secondary);
