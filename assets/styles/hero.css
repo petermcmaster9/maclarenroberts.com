@@ -2,7 +2,7 @@
     height: clamp(500px, 85vh, 900px);
     margin-top: clamp(80px, 15vh, 160px);
     width: 100%;
-    background: linear-gradient(to bottom, black, var(--color-4-2));
+    background: linear-gradient(to bottom, black, #666/*var(--color-4-2)*/);
     position: relative;
     top: 0;
     left: 0;
