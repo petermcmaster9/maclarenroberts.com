@@ -2,15 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 60px;
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
-    width: 70vw;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 0;
+    background: linear-gradient(to bottom, #6b8695, #ddd);
 
+}
+
+.bio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 60px;
     background: linear-gradient(to bottom, var(--color-4-2), var(--color-3-2));
+    width: 70vw;
+    border-top: solid 2px #6b8695;
+    border-bottom: solid 2px #6b8695;
 }
 
 .bio__title {
@@ -179,7 +184,7 @@
 
 /* Desktop screens */
 @media (min-width: 1024px) {
-    .bio {
+    .bio__container {
         width: 800px;
     }
     .bio__mixed-media {

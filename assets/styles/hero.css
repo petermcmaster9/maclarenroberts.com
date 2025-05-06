@@ -1,12 +1,13 @@
 .hero {
-    height: clamp(700px, 100vh, 500px);
+    height: clamp(500px, 85vh, 900px);
+    margin-top: clamp(80px, 15vh, 160px);
     width: 100%;
     background: linear-gradient(to bottom, black, var(--color-4-2));
     position: relative;
     top: 0;
     left: 0;
     z-index: 1;
-    margin-top: clamp(80px, 15vh, 160px);
+
     padding-bottom: 15px;
 
     display: flex;
@@ -14,6 +15,7 @@
 }
 
 .hero__video-container {
+    margin-top: clamp(80px, 20vh, 140px);
     align-self: center;
     width: 88%;
     aspect-ratio: 16/9;
@@ -21,8 +23,6 @@
     position: relative;
     border: 4px solid rgba(255, 255, 255, 0.6);
     border-radius: 8px;
-
-    margin-top: clamp(120px, 20vh, 200px);
 }
 
 .hero__video-cover {
@@ -95,16 +95,13 @@
 }
 
 .hero__contact-top {
+    margin-top: 3rem;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     align-self: center;
-    margin-top: 40px;
-}
-
-.hero__empty.--w60px {
-    display: none;
 }
 
 .hero__contact-email-wrapper {
@@ -243,7 +240,7 @@
     .hero__video-container {
         width: 60%;
         max-width: 800px;
-        margin-top: clamp(100px, 10vh, 280px);
+        margin-top: clamp(40px, 10vh, 120px);
     }
 
     @keyframes pulseEffect {
@@ -258,11 +255,8 @@
     }
 
     .hero__contact-top {
+        padding-left: 60px;
         flex-direction: row;
-    }
-
-    .hero__empty.--w60px {
-        display: block;
     }
 
     .hero__contact-email-copied {
