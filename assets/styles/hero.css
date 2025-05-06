@@ -1,5 +1,5 @@
 .hero {
-    height: clamp(800px, 100vh, 1400px);
+    height: clamp(700px, 100vh, 500px);
     width: 100%;
     background: linear-gradient(to bottom, black, var(--color-4-2));
     position: relative;

@@ -30,7 +30,7 @@
     transform: translate(-50%, -50%);
     width: 300%;
     height: 90%;
-    background: rgba(233, 233, 233, 0.6);
+    background: rgba(233, 233, 233, 0.7);
     border-radius: 50%;
     z-index: -1;
     filter: blur(2px);
@@ -83,19 +83,13 @@
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     border-radius: 30px;
-    background-color: rgba(233, 233, 233, 0.6);
+    background-color: rgba(233, 233, 233, 0.75);
     filter: drop-shadow(0 0 4px #fff);
 }
-
-.bio__text-frame--rounded {
-    margin-bottom: 1rem;
-    border-radius: 30px;
-}
-
 /* List styling */
 .bio__skills {
     color: var(--color-primary);
-    font-size: clamp(1rem, 4.1vw, 2rem);
+    font-size: clamp(1.2rem, 6vw, 2.2rem);
     margin: 2rem 0;
     text-align: center;
     position: relative;
@@ -111,7 +105,7 @@
     transform: translate(-50%, -50%);
     width: 80%;
     height: 150%;
-    background: rgba(233, 233, 233, 0.6);
+    background: rgba(233, 233, 233, 0.85);
     border-radius: 50%;
     z-index: -1;
     filter: blur(2px);
