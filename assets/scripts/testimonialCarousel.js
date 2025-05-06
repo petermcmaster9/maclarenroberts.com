@@ -13,7 +13,7 @@ class TestimonialCarousel {
         
         this.updateView();
         this.setupEventListeners();
-        // this.startAutoScroll();
+        this.startAutoScroll();
     }
 
     startAutoScroll() {
