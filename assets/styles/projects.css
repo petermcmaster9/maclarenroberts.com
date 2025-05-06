@@ -59,18 +59,19 @@
     margin-bottom: 30px;
 }
 
-.projects__card p {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 200;
-    color: var(--color-secondary);
-}
-
-.projects__card h4 {
+.projects__project-title {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
     margin-bottom: 20px;
     font-size: clamp(1.4rem, 3.2vw, 2.6rem);
     z-index: 2;
+    color: var(--color-secondary);
+}
+
+.projects__project-description {
+    padding: 0 clamp(30px, 5vw, 45px);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
     color: var(--color-secondary);
 }
 
