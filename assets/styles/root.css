@@ -80,7 +80,7 @@ section, footer {
     max-width: 100%;
     box-sizing: border-box;
     padding: 2rem 0;
-    scroll-padding-top: clamp(80px, 15vh, 160px);
+    scroll-padding-top: var(--navbar-height);
 }
 
 .section__title {

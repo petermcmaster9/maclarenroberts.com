@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
-    margin-top: clamp(80px, 15vh, 160px);
+    padding-top: var(--navbar-height);
     padding-bottom: 15px;
     top: 0;
     left: 0;
@@ -10,6 +10,12 @@
 
     overflow: hidden !important;  /* breaks view otherwise (pulse) */
     background: linear-gradient(to bottom, var(--color-1), var(--color-3) 40%, var(--color-1) 100%);
+}
+
+/* override global */
+section.hero {
+    scroll-padding-top: 0;
+    scroll-padding-bottom: 0;
 }
 
 .hero__video-container {
