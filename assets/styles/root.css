@@ -1,4 +1,47 @@
 /* ------------------------------------------------------------ */
+/* Custom Properties */
+/* ------------------------------------------------------------ */
+
+:root {
+    /* navbar height / offset */
+    --navbar-height: clamp(80px, 11vh, 120px);
+
+    /* Fonts */
+    --font-family-1: 'Nunito Sans', sans-serif, arial;
+    --font-family-2: 'Raleway', sans-serif, arial;
+    --font-weight-thin: 200;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-color-white: #fff;
+    --font-color-grey1: #ccc;
+    --font-color-grey2: #333;
+    --font-color-black: #000;
+
+    --font-size-heading: clamp(1.5rem, 5vw, 2.6rem);
+    --font-size-subheading-1: clamp(1.25rem, 4vw, 2rem);
+    --font-size-subheading-2: clamp(1.125rem, 3vw, 1.5rem);
+    --font-size-body: clamp(1rem, 2vw, 1.25rem);
+    --font-size-small: clamp(0.8rem, 2vw, 1.125rem);
+
+    /* Colors */
+    --color-1: #000;
+    --color-2: #383838;
+    --color-3: #787878;
+    --color-4: #ccc;
+    --color-5: #fff;
+    --color-accent: #71BAC5; /* Teal accent */
+    --color-accent2: #83b9c2; /* Lighter teal */
+
+    /* Breakpoints */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 1024px;
+    --breakpoint-desktop: 1440px;
+}
+
+
+/* ------------------------------------------------------------ */
 /* Reset html globals */
 /* ------------------------------------------------------------ */
 
@@ -24,7 +67,7 @@ body, ul, li, a, p {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-bottom: clamp(80px, 15vh, 160px);
+    scroll-padding-bottom: var(--navbar-height);
 }
 
 
@@ -114,50 +157,13 @@ section, footer {
     font-display: swap;
 }
 
-/* ------------------------------------------------------------ */
-/* Custom Properties */
-/* ------------------------------------------------------------ */
-
-:root {
-    /* Fonts */
-    --font-family-1: 'Nunito Sans', sans-serif, arial;
-    --font-family-2: 'Raleway', sans-serif, arial;
-    --font-weight-thin: 200;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
-
-    --font-color-white: #fff;
-    --font-color-grey1: #ccc;
-    --font-color-grey2: #333;
-    --font-color-black: #000;
-
-    --font-size-heading: clamp(1.5rem, 5vw, 3rem);
-    --font-size-subheading-1: clamp(1.25rem, 4vw, 2rem);
-    --font-size-subheading-2: clamp(1.125rem, 3vw, 1.5rem);
-    --font-size-body: clamp(1rem, 2vw, 1.25rem);
-
-    /* Colors */
-    --color-1: #000;
-    --color-2: #383838;
-    --color-3: #787878;
-    --color-4: #a8a8a8;
-    --color-5: #fff;
-    --color-accent: #71BAC5; /* Teal accent */
-    --color-accent2: #83b9c2; /* Lighter teal */
-
-    /* Breakpoints */
-    --breakpoint-mobile: 768px;
-    --breakpoint-tablet: 1024px;
-    --breakpoint-desktop: 1440px;
-}
 
 /* ------------------------------------------------------------ */
 /* Animations */
 /* ------------------------------------------------------------ */
 
-
 /* Animation keyframes */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -195,19 +201,14 @@ section, footer {
 
 .pulse1 {
     animation-delay: 0s;
-    overflow: hidden;
 }
 
 .pulse2 {
     animation-delay: 3s;
-    overflow: hidden;
 }
 
 .pulse3 {
     animation-delay: 6s;
-    overflow: hidden;
-    /* TODO */
-    /* overflow: hidden; */  /* SOMETHING STRANGE ABOUT left-right SCROLL AND THESE ANIMATIONS? IDK NEED TO REDUCE WHITESPACE left-right MOBILE VIEW */
 }
 
 @keyframes pulseEffect {

@@ -8,6 +8,7 @@
     height: clamp(500px, 85vh, 900px);
     width: 100%;
 
+    overflow: hidden !important;  /* breaks view otherwise (pulse) */
     background: linear-gradient(to bottom, var(--color-1), var(--color-3) 40%, var(--color-1) 100%);
 }
 
@@ -59,8 +60,6 @@
     align-self: center;
     margin-top: 3rem;
     padding-left: 20px;
-
-    color: white;
 }
 
 .hero__contact-email-wrapper {
@@ -74,14 +73,14 @@
 
     font-family: var(--font-family-1);
     font-weight: var(--font-weight-thin);
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    color: white;
+    font-size: var(--font-size-body);
+    color: var(--font-color-white);
 
     transition: color 0.5s ease;
 }
 
 .hero__contact-email.copied {
-    color: var(--color-accent); /*accent the highlight */
+    color: var(--color-accent2);
 }
 
 .hero__contact-email:hover {
@@ -93,30 +92,30 @@
     margin-left: 5px;
     filter: brightness(1) invert(1);
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
 }
 
 .hero__contact-email-copy:hover,
 .hero__contact-email:hover {
-    transition: transform 0.4s ease;
-    transform: scale(1.01);
+    transition: transform 0.4s ease-in-out;
 }
 
 .hero__contact-email-copy:active,
 .hero__contact-email:active {
-    transition: transform 0.3s ease;
-    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
 }
 
 .hero__contact-email-copied {
     margin-left: 0;
     margin-top: 4px;
-    color: white;
-    font-size: clamp(0.6rem, 4vw, 1.0rem);
     align-self: center;
+
     font-family: var(--font-family-1);
     font-weight: var(--font-weight-thin);
+    color: var(--font-color-white);
+    font-size: var(--font-size-body);
     opacity: 0;
+
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -129,23 +128,25 @@
 
 .hero__contact-button {
     align-self: center;
-    margin-top: 20px;
+    margin-top: 1.4rem;
     padding: 10px 20px;
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
-    box-shadow: 2px 3px var(--color-tertiary);
-    background-color: var(--color-accent);
-
-    font-size: 1.2rem;
-    font-weight: var(--font-weight-regular);
-    color: var(--color-tertiary);
     position: relative;
     overflow: hidden;
-    cursor: pointer;
 
-    display: inline-block;
+    border: 2px solid var(--color-1);
+    border-radius: 8px;
+
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--color-5);
+    color: var(--font-color-black);
+
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+
+    filter: drop-shadow(0 0 2px #fff);
 }
 
 .hero__contact-button::after {
@@ -155,19 +156,16 @@
     left: 50%;
     width: 0;
     height: 0;
-    background: #0081a187;
+    background: var(--color-4);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: width 0.6s ease-out, height 0.6s ease-out;
+    transition: width 0.4s ease-out, height 0.4s ease-out;
+    z-index: -1;
 }
 
 .hero__contact-button:hover::after {
     width: 200%;
     height: 200%;
-}
-
-.hero__contact-button:hover {
-    background-color: #007d9c98;
 }
 
 .hero__contact-button:active {
@@ -221,17 +219,13 @@
     }
 
     .hero__contact-email-copied {
-        margin-left: 8px;
+        margin-left: 0.5rem;
         margin-top: 0;
     }
 
     .hero__contact-button {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-        font-family: var(--font-family-1);
-        border: 5px double rgba(255, 255, 255, 0.8);
-        box-shadow: 6px 6px black;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 }
 

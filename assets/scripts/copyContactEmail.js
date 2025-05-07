@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         elements.forEach(element => {
             element.addEventListener('mouseenter', () => {
-                elements.forEach(el => el.style.transform = 'scale(1.05)');
+                elements.forEach(el => el.style.transform = 'scale(1.04)');
             });
             
             element.addEventListener('mouseleave', () => {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             element.addEventListener('mouseup', () => {
-                elements.forEach(el => el.style.transform = 'scale(1.05)');
+                elements.forEach(el => el.style.transform = 'scale(1.04)');
             });
         });
     });
