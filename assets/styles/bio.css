@@ -3,19 +3,20 @@
     flex-direction: column;
     align-items: center;
     padding: 0 0;
-    background: linear-gradient(to bottom, #000, #ddd);
+    background: linear-gradient(to bottom, #000, #ccc 50%, #000 100%);
 
 }
 
 .bio__container {
+    border: 8px green;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 0 60px;
-    background: linear-gradient(to bottom, #777, #000); /*linear-gradient(to bottom, var(--color-4-2), var(--color-3-2));*/
+    background: linear-gradient(to bottom, #000, #444 33%, #000 50%, #444 66%, #000 100%); /*(to bottom, #000, #fff 33%, #000 66%, fff 100%);*/
     width: 70vw;
-    border-top: solid 2px #6b8695;
-    border-bottom: solid 2px #6b8695;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
 }
 
 .bio__title {
@@ -100,7 +101,7 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 4px #fff);
+    filter: drop-shadow(0 0 2px #fff);
 }
 
 .bio__skills::before {
@@ -111,10 +112,11 @@
     transform: translate(-50%, -50%);
     width: 80%;
     height: 150%;
-    background: rgba(233, 233, 233, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     z-index: -1;
     filter: blur(2px);
+    filter: drop-shadow(0 0 4px #000);
 }
 
 .bio__skills-subheading {
@@ -122,7 +124,7 @@
     font-size: clamp(1rem, 4vw, 1.6rem);
     font-weight: 600;
     text-align: left;
-    filter: drop-shadow(-5px 5px 2px rgba(68, 68, 68, 0.5));
+    filter: drop-shadow(0px 0px 1px #fff);
 }
 
 .bio__skills-list {
