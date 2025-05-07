@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 0;
-    background: linear-gradient(to bottom, #000, #ccc 50%, #000 100%);
-
+    background: linear-gradient(to bottom, var(--color-1), var(--color-5) 50%, var(--color-1) 100%);
 }
 
 .bio__container {
@@ -12,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 0 60px;
-    background: linear-gradient(to bottom, #000, #444 33%, #000 50%, #444 66%, #000 100%);
+    background: linear-gradient(to bottom, var(--color-1), #444 33%, var(--color-1) 50%, #444 66%, var(--color-1) 100%);
     width: 70vw;
 }
 
@@ -83,14 +82,14 @@
 .bio__text-frame {
     padding: 1rem 2rem;
     margin-bottom: 1rem;
-    border: 4px double black;
+    border: 4px double var(--color-1);
     border-radius: 30px;
     background-color: rgba(233, 233, 233, 0.75);
     filter: drop-shadow(0 0 2px #fff);
 }
 /* List styling */
 .bio__skills {
-    color: var(--color-primary);
+    color: var(--color-1);
     font-size: clamp(1.2rem, 6vw, 2.2rem);
     margin: 2rem 0;
     text-align: center;
@@ -115,7 +114,7 @@
 }
 
 .bio__skills-subheading {
-    color: black;
+    color: var(--color-1);
     font-size: clamp(1rem, 4vw, 1.6rem);
     font-weight: 600;
     text-align: left;

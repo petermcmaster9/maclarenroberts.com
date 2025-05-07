@@ -1,26 +1,24 @@
 .hero {
-    height: clamp(500px, 85vh, 900px);
-    margin-top: clamp(80px, 15vh, 160px);
-    width: 100%;
-    background: linear-gradient(to bottom, #000, #888 50%, #000 100%);
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    padding-bottom: 15px;
-
     display: flex;
     flex-direction: column;
+    margin-top: clamp(80px, 15vh, 160px);
+    padding-bottom: 15px;
+    top: 0;
+    left: 0;
+    height: clamp(500px, 85vh, 900px);
+    width: 100%;
+
+    background: linear-gradient(to bottom, var(--color-1), var(--color-3) 40%, var(--color-1) 100%);
 }
 
 .hero__video-container {
+    position: relative;
     margin-top: clamp(80px, 20vh, 140px);
     align-self: center;
     width: 88%;
     aspect-ratio: 16/9;
+
     background-color: rgba(255, 255, 255, 0.8);
-    position: relative;
     border: 4px solid rgba(255, 255, 255, 0.6);
     border-radius: 8px;
 }
@@ -31,10 +29,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 30;
+
     background-image: url('../images/hero-vid-cover.png');
     background-size: cover;
     background-position: center;
-    z-index: 30;
+
     transition: opacity 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -52,56 +52,15 @@
     z-index: 2;
 }
 
-/* Pulse effect */
-
-.pulse {
-    background-color: rgba(255, 255, 255, 0.6);;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
-    animation: pulseEffect 9s infinite ease-out;
-    opacity: 0;
-}
-
-.pulse1 {
-    animation-delay: 0s;
-    overflow: hidden;
-}
-
-.pulse2 {
-    animation-delay: 3s;
-    overflow: hidden;
-}
-
-.pulse3 {
-    animation-delay: 6s;
-    /* TODO */
-    /* overflow: hidden; */  /* SOMETHING STRANGE ABOUT left-right SCROLL AND THESE ANIMATIONS? IDK NEED TO REDUCE WHITESPACE left-right MOBILE VIEW */
-}
-
-@keyframes pulseEffect {
-    0% {
-        transform: scale(1);
-        opacity: 0.6;
-    }
-    100% {
-        transform: scale(1.2, 1.4);
-        opacity: 0;
-    }
-}
-
 .hero__contact-top {
-    margin-top: 3rem;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     align-self: center;
+    margin-top: 3rem;
+    padding-left: 20px;
+
+    color: white;
 }
 
 .hero__contact-email-wrapper {
@@ -111,11 +70,13 @@
 }
 
 .hero__contact-email {
-    color: white;
-    font-size: clamp(1rem, 4vw, 1.2rem);
     align-self: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 200;
+
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-thin);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    color: white;
+
     transition: color 0.5s ease;
 }
 
@@ -138,7 +99,7 @@
 .hero__contact-email-copy:hover,
 .hero__contact-email:hover {
     transition: transform 0.4s ease;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .hero__contact-email-copy:active,
@@ -153,8 +114,8 @@
     color: white;
     font-size: clamp(0.6rem, 4vw, 1.0rem);
     align-self: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 200;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-thin);
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -176,7 +137,7 @@
     background-color: var(--color-accent);
 
     font-size: 1.2rem;
-    font-weight: 450;
+    font-weight: var(--font-weight-regular);
     color: var(--color-tertiary);
     position: relative;
     overflow: hidden;
@@ -268,7 +229,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 1.8rem;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: var(--font-family-1);
         border: 5px double rgba(255, 255, 255, 0.8);
         box-shadow: 6px 6px black;
     }
