@@ -1,6 +1,5 @@
 .projects {
     background-color: black;
-    color: var(--color-secondary);
 }
 
 /* .projects__title h2 {
@@ -14,6 +13,7 @@
 
 .projects__title {
     padding: 60px 0 20px 0;
+    color: var(--color-4);
     filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
 
@@ -55,7 +55,7 @@
     aspect-ratio: 16/9;
     background-color: rgba(255, 255, 255, 0.8);
     position: relative;
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    border: 3px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
     margin-bottom: 30px;
 }
@@ -66,14 +66,14 @@
     margin-bottom: 20px;
     font-size: clamp(1.4rem, 3.2vw, 2.6rem);
     z-index: 2;
-    color: var(--color-secondary);
+    color: var(--color-5);
 }
 
 .projects__project-description {
     padding: 0 clamp(30px, 5vw, 45px);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-    color: var(--color-secondary);
+    color: var(--color-5);
 }
 
 .projects__video {
@@ -84,13 +84,13 @@
 }
 
 .pulse-projects {
-    background-color: rgba(255, 255, 255, 0.6);;
+    background-color: rgba(255, 255, 255, 0.8);;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     animation: pulseEffectProjects 9s infinite ease-out;
     opacity: 0;
@@ -111,7 +111,7 @@
 @keyframes pulseEffectProjects {
     0% {
         transform: scale(1);
-        opacity: 0.6;
+        opacity: 0.9;
     }
     100% {
         transform: scale(1.2, 1.4);
@@ -123,10 +123,10 @@
     @keyframes pulseEffectProjects {
         0% {
             transform: scale(1);
-            opacity: 0.6;
+            opacity: 0.9;
         }
         100% {
-            transform: scale(1.12, 1.22);
+            transform: scale(1.16, 1.32);
             opacity: 0;
         }
     }
@@ -137,11 +137,11 @@
 
     @keyframes pulseEffectProjects {
         0% {
-            transform: scale(1.);
-            opacity: 0.6;
+            transform: scale(1);
+            opacity: 0.9;
         }
         100% {
-            transform: scale(1.1, 1.18);
+            transform: scale(1.16, 1.32);
             opacity: 0;
         }
     }
