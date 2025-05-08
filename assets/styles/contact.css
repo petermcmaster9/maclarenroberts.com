@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-1);
+    background: linear-gradient(to bottom, var(--color-1) 30%, var(--color-6) 100%);
+    padding-bottom: 0;
 }
 
 .contact__title {
     padding: 0;
     color: var(--font-color-black);
     filter: drop-shadow(0 0 1px #fff);
-    position: relative;
-    z-index: 3;
+    border-top: none;
+    border-bottom: none;
 }
 
 .contact__form {
@@ -86,6 +87,11 @@
 
 .contact__submit-button:hover {
     background-color: #555;
+}
+
+.hero__contact-top--contact {
+    padding-left: 0;
+    margin: 1rem auto;
 }
 
 @media (min-width: 768px) {

@@ -7,8 +7,8 @@
 
 .testimonials__title {
     padding: 6px 8px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.9));
     position: relative;
     z-index: 2;
@@ -135,6 +135,8 @@
 .testimonials__testimonial {
     text-align: justify;
     font-size: var(--font-size-body);
+    font-family: 'Cormorant', 'Raleway', sans-serif, arial;
+    line-height: 1.4;
 }
 
 .testimonials__testimonial--justin {
@@ -170,6 +172,7 @@
 }
 
 .testimonials__wordcloud {
+    margin-top: 2rem;
     align-self: center;
     width: clamp(120px, 10vw, 200px);
 }

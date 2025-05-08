@@ -12,7 +12,8 @@
 } */
 
 .projects__title {
-    padding: 60px 0 20px 0;
+    border-top: none;
+    border-bottom: none;
     color: var(--font-color-white);
     filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
