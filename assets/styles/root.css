@@ -24,7 +24,7 @@
     --font-size-subheading-1: clamp(1.25rem, 4vw, 1.8rem);
     --font-size-subheading-2: clamp(1.125rem, 3vw, 1.5rem);
     --font-size-body: clamp(1rem, 2vw, 1.25rem);
-    --font-size-bio: clamp(0.96rem, 5%, 1.1rem);
+    --font-size-bio: clamp(0.96rem, 2vw, 1.18rem);
     --font-size-small: clamp(0.6rem, 2vw, 1rem);
 
     /* Colors */
@@ -33,7 +33,7 @@
     --color-3: #787878;
     --color-4: #ccc;
     --color-5: #fff;
-    --color-6: #121239;
+    --color-6: #0b0b27;
     --color-accent: #71BAC5; /* Teal accent */
     --color-accent2: #83b9c2; /* Lighter teal */
 

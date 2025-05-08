@@ -24,7 +24,7 @@
     border: 2px solid;
     border-radius: 30px;
     filter: drop-shadow(0 0 8px var(--color-5));
-    margin: 6rem 0 2rem 0;
+    margin: 6rem 0 0 0;
 }
 
 .contact__form-group {
@@ -91,7 +91,7 @@
 
 .hero__contact-top--contact {
     padding-left: 0;
-    margin: 1rem auto;
+    margin: 3rem auto 1.6rem auto;
 }
 
 @media (min-width: 768px) {
@@ -103,5 +103,9 @@
 @media (min-width: 1024px) {
     .contact {
         border: none;
+    }
+
+    .hero__contact-top--contact {
+        margin: 3rem;
     }
 }

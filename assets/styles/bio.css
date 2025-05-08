@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0;
+    padding: 0 0 0 0;
     background: linear-gradient(to bottom, var(--color-1) 15%, var(--color-5) 50%, var(--color-1) 90%);
 }
 
@@ -10,14 +10,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 60px;
+    padding: 0 0 0 0;
     background: linear-gradient(to bottom, var(--color-1), #444 33%, var(--color-1) 50%, #444 66%, var(--color-1) 100%);
     width: 70vw;
 }
 
 .bio__title {
-    padding: 12px 3rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 4rem auto;
     color: var(--font-color-white);
     position: relative;
     z-index: 2;

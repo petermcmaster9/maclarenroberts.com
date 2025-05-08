@@ -12,6 +12,7 @@
 } */
 
 .projects__title {
+    margin: 3rem auto 2rem auto;
     border-top: none;
     border-bottom: none;
     color: var(--font-color-white);
