@@ -38,6 +38,7 @@
     --breakpoint-mobile: 768px;
     --breakpoint-tablet: 1024px;
     --breakpoint-desktop: 1440px;
+
 }
 
 
@@ -197,6 +198,9 @@ section, footer {
     border-radius: 8px;
     animation: pulseEffect 9s infinite ease-out;
     opacity: 0;
+
+    --pulse-scale-x: 1.2;
+    --pulse-scale-y: 1.4;
 }
 
 .pulse1 {
@@ -211,13 +215,30 @@ section, footer {
     animation-delay: 6s;
 }
 
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .pulse {
+        /* --pulse-scale-x: 1.15;
+        --pulse-scale-y: 1.9; */
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .pulse {
+        /* --pulse-scale-x: 0;
+        --pulse-scale-y: 0; */
+    }
+}
+
 @keyframes pulseEffect {
     0% {
         transform: scale(1);
         opacity: 0.6;
     }
     100% {
-        transform: scale(1.2, 1.4);
+        transform: scale(var(--pulse-scale-x), var(--pulse-scale-y));
         opacity: 0;
     }
 }
+
