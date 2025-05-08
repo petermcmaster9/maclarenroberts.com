@@ -83,7 +83,7 @@
     padding: 10px 20px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-size: var(--font-size-subheading-1);
     text-decoration: none;
     color: white;
     transition: color 0.3s ease-in-out;
@@ -215,7 +215,8 @@
     }
     
     .navbar__link {
-        font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+        font-size: var(--font-size-subheading-2);
+        font-weight: var(--font-weight-300);
     }
 }
 

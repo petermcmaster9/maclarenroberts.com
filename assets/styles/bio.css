@@ -71,7 +71,7 @@
 
 .bio__text-body {
     padding: 10px clamp(2px, 2vw, 100px);
-    font-size: clamp(0.8rem, 3.8vw, 1.2rem);
+    font-size:var(--font-size-body);;
 }
 
 .bio__text-body--small {
@@ -189,13 +189,19 @@
         padding: 0 80px;
         margin: 40px 0;
         justify-content: space-evenly;
+        max-height: 500px;
     }
 
     .bio__image {
-        width: 50%;
+        width: 42%;
+        margin-bottom: 2rem;
+    }
+
+    .bio__image--featured {
+        width: 30%;
     }
 
     .bio__text-container {
-        width: 40%;
+        width: 42%;
     }
 }

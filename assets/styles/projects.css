@@ -13,7 +13,7 @@
 
 .projects__title {
     padding: 60px 0 20px 0;
-    color: var(--color-4);
+    color: var(--font-color-white);
     filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
 }
 
