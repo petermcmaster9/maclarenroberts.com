@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     transition: transform 0.9s ease-in-out;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -62,7 +62,7 @@
     flex: 0 0 auto;
     height: auto;
     margin: 0 auto;
-    padding: 1.4rem;
+    padding: 1rem;
 
     background: var(--color-5);
     color: var(--color-2);
@@ -136,7 +136,7 @@
     text-align: justify;
     font-size: var(--font-size-body);
     font-family: 'Cormorant', 'Raleway', sans-serif, arial;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .testimonials__testimonial--justin {
