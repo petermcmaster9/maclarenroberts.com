@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0 0 0 0;
+    border-top: none;
+    border-bottom: none;
     background: linear-gradient(to bottom, var(--color-1) 15%, var(--color-5) 50%, var(--color-1) 90%);
 }
 
@@ -16,7 +18,7 @@
 }
 
 .bio__title {
-    margin: 0 auto 4rem auto;
+    margin: 1rem auto 4rem auto;
     color: var(--font-color-white);
     position: relative;
     z-index: 2;

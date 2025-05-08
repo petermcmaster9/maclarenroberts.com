@@ -5,7 +5,7 @@
     padding-bottom: 15px;
     top: 0;
     left: 0;
-    height: clamp(800px, 100vh, 1400px);
+    min-height: max(fit-content, 100vh);
     width: 100%;
     position: relative;
 
@@ -149,6 +149,7 @@ section.hero {
 .hero__contact-button {
     align-self: center;
     margin-top: 1.4rem;
+    margin-bottom: 2rem;
     padding: 10px 20px;
     position: relative;
     overflow: hidden;
@@ -212,8 +213,9 @@ section.hero {
 
 /* Desktop screens */
 @media (min-width: 1024px) {
+
     .hero {
-        height: clamp(900px, 100vh, 1600px);
+        min-height: max(fit-content, 100vh);
         background: var(--color-1);
     }
 
@@ -239,7 +241,7 @@ section.hero {
 
     .hero__contact-button {
         margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
 
