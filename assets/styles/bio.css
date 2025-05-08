@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 0;
-    background: linear-gradient(to bottom, var(--color-1), var(--color-5) 50%, var(--color-1) 100%);
+    background: linear-gradient(to bottom, var(--color-1) 15%, var(--color-5) 50%, var(--color-1) 90%);
 }
 
 .bio__container {
@@ -18,10 +18,10 @@
 .bio__title {
     padding: 12px 16px;
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--font-color-white);
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 4px #fff);
+    filter: drop-shadow(0 0 1px #fff);
 }
 
 .bio__title::before {

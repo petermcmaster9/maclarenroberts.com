@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-1);
 }
 
 .contact__title {
     padding: 0;
-    color: var(--color-secondary);
-    filter: drop-shadow(0 0 6px #111);
+    color: var(--font-color-black);
+    filter: drop-shadow(0 0 1px #fff);
     position: relative;
     z-index: 3;
 }
@@ -19,10 +19,10 @@
     width: 88%;
     max-width: 600px;
     padding: 2rem;
-    background-color: var(--color-3-2);
+    background-color: var(--color-4);
     border: 2px solid;
-    border-radius: 8px;
-    filter: drop-shadow(0 0 10px #000);
+    border-radius: 30px;
+    filter: drop-shadow(0 0 8px var(--color-5));
     margin: 6rem 0 2rem 0;
 }
 
@@ -36,7 +36,8 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     text-align: left;
-    color: var(--color-secondary);
+    font-weight: var(--font-weight-medium);
+    color: var(--font-color-black);
 
     margin-bottom: 0.5rem;
 }
@@ -47,7 +48,7 @@
     padding: 0.8rem;
     border: 2px solid #adadad;
     border-radius: 4px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-5);
 
 
     font-family: 'Nunito Sans', sans-serif;
@@ -57,20 +58,30 @@
 .contact__form-group textarea {
     min-height: 150px;
     resize: vertical;
-    background-color: var(--color-secondary);
+    background-color: var(--color-5);
 }
 
 .contact__submit-button {
     align-self: center;
-    padding: 1rem;
-    background-color: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.1rem;
+    margin-top: 1.4rem;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid var(--color-1);
+    border-radius: 8px;
+
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--color-5);
+    color: var(--font-color-black);
+
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+
+    filter: drop-shadow(0 0 2px #fff);
 }
 
 .contact__submit-button:hover {
