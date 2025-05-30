@@ -34,7 +34,7 @@
                 <span class="navbar__hamburger"></span>
             </button>
             <ul class="navbar__navlist">
-                <li><a href="#reel" class="navbar__link">Reel<span class="navbar__link--underline"></span></a></li>
+                <li><a href="#hero" class="navbar__link">Reel<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#bio" class="navbar__link">Bio<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#testimonials" class="navbar__link">Testimonials<span class="navbar__link--underline"></span></a></li>
                 <li><a href="#projects" class="navbar__link">Projects<span class="navbar__link--underline"></span></a></li>
@@ -45,7 +45,7 @@
     <main>
 
         <!-- HERO -->
-        <section id="reel" class="hero">
+        <section id="hero" class="hero">
             <div class="hero__video-cont-cont">
                 <div class="hero__video-container">
                     <div class="hero__video-cover"></div>
@@ -365,7 +365,10 @@
 
         <!-- CONTACT -->
         <section id="contact" class="contact">
-            <form class="contact__form">
+            <form name="contact" class="contact__form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="contact__hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
                 <h2 class="contact__title section__title">Contact</h2>
                 <div class="contact__form-group">
                     <label for="name">Name:</label>

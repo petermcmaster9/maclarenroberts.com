@@ -27,6 +27,10 @@
     margin: 6rem 0 0 0;
 }
 
+.contact__hidden {
+    display: none;
+}
+
 .contact__form-group {
     margin-bottom: 1.5rem;
 }
