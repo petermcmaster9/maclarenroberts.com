@@ -1,5 +1,5 @@
 .projects {
-    background-color: black;
+    background-color: var(--color-1);
 }
 
 /* .projects__title h2 {
@@ -21,22 +21,25 @@
 
 .projects__grid {
     display: grid;
+    grid-gap: 1rem; /* Fallback for older browsers */
     gap: 1rem;
     justify-items: center;
     margin: 0 5vw;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
-    /* Mobile first - single column */
-    grid-template-columns: 1fr;
-    
-    /* Tablet and up - 2x3 grid */
-    @media (min-width: 768px) {
+    grid-template-columns: 1fr; /* Mobile first - single column */
+}
+
+/* Tablet and up - 2x3 grid */
+@media (min-width: 768px) {
+    .projects__grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+    .projects__grid {
         margin: 0 auto;
     }
 }
@@ -52,7 +55,7 @@
 }
 
 .projects__video-container {
-    width: 65%;
+    width: 85%;
     align-self: center;
     aspect-ratio: 16/9;
     background-color: rgba(255, 255, 255, 0.8);
@@ -62,11 +65,38 @@
     margin-bottom: 30px;
 }
 
+/* Tablet and up - 2x3 grid */
+@media (min-width: 768px) {
+    .projects__video-container {
+        width: 70%;
+    }
+}
+
 .projects__project-title {
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-size: clamp(1.4rem, 3.2vw, 2.6rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-5);
+    font-size: var(--font-size-heading-2);
+    z-index: 2;
+    color: var(--color-5);
+}
+
+.projects__project-subtitle-1 {
+    font-family: var(--font-family-1), sans-serif;
+    font-weight: 280;
+    margin-bottom: 0.6rem;
+    font-size: var(--font-size-subheading-1);
+    z-index: 2;
+    color: var(--color-5);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+}
+
+.projects__project-subtitle-2 {
+    font-family: var(--font-family-1), sans-serif;
+    font-weight: 280;
+    margin-bottom: 0.6rem;
+    font-size: var(--font-size-subheading-2);
     z-index: 2;
     color: var(--color-5);
 }
@@ -76,6 +106,8 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
     color: var(--color-5);
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));
 }
 
 .projects__video {
