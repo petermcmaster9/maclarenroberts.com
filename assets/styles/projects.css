@@ -31,14 +31,17 @@
     grid-template-columns: 1fr; /* Mobile first - single column */
 }
 
-/* Tablet and up - 2x3 grid */
+/* Tablet and up */
 @media (min-width: 768px) {
-    .projects__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    /* stuff */
 }
 
 @media (min-width: 1024px) {
+    /* 2x3 grid */
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .projects__grid {
         margin: 0 auto;
     }
@@ -68,7 +71,7 @@
 /* Tablet and up - 2x3 grid */
 @media (min-width: 768px) {
     .projects__video-container {
-        width: 70%;
+        width: 80%;
     }
 }
 
