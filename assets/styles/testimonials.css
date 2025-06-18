@@ -191,7 +191,7 @@
 
 .testimonials__testimonial {
     text-align: justify;
-    font-size: clamp(0.7rem, 3.7vw, 1.1rem);
+    font-size: clamp(0.7rem, 3.6vw, 1.1rem);
     font-family: 'Cormorant', 'Raleway', sans-serif, arial;
     line-height: 1.2;
 }

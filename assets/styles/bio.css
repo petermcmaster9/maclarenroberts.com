@@ -51,6 +51,7 @@
     margin: 0;
     margin-bottom: 2rem; 
     width: 100%;
+    max-width: 400px;
     align-self: center;
     border-radius: 30px;
     border-radius: 30px;
@@ -161,6 +162,11 @@
     .bio__mixed-media {
         width: 70%;
     }
+
+    .bio__text-container {
+        max-width: 450px;
+        padding: 2rem;
+    }
 }
 
 /* Desktop screens */
@@ -189,7 +195,6 @@
 
     .bio__text-container {
         max-width: 500px;
-        padding: 2rem;
     }
 
     .bio__text-body {

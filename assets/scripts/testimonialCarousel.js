@@ -107,7 +107,7 @@ class TestimonialCarousel {
         if (window.innerWidth >= 1280) {        // large desktop
             this.cardsPerView = 2;
         } else if (window.innerWidth >= 768) {  // tablet‑ish
-            this.cardsPerView = 2;
+            this.cardsPerView = 1;
         } else {                                // mobile
             this.cardsPerView = 1;
         }
@@ -127,11 +127,7 @@ class TestimonialCarousel {
             this.cardWidth = Math.max(260, containerWidth);
             this.slideAmount = this.cardWidth + gap;
         } else if (this.cardsPerView === 2) {
-            // For tablet view
-            this.cardWidth = Math.max(260, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
-            this.slideAmount = this.cardWidth + gap;
-        } else {
-            // For tablet view
+            // For desktop
             this.cardWidth = Math.max(260, (containerWidth - (gap * (this.cardsPerView - 1))) / this.cardsPerView);
             this.slideAmount = this.cardWidth + gap;
         }
