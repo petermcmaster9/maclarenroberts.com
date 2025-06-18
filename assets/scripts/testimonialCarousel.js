@@ -13,8 +13,68 @@ class TestimonialCarousel {
         
         this.updateView();
         this.setupEventListeners();
+        this.setupDragHandlers();
         this.startAutoScroll();
     }
+
+      /* ---------- NEW: drag / swipe support ---------- */
+    setupDragHandlers() {
+        /* Unifies mouse + touch with modern Pointer Events. */
+        let isDragging   = false;
+        let startX       = 0;   // pointer-down position
+        let prevOffset   = 0;   // tx() when the drag started
+        let liveOffset   = 0;   // tx() while dragging
+
+        const track = this.track;
+
+        const pointerDown = (e) => {
+        /* Ignore right-clicks etc. */
+        if (e.button && e.button !== 0) return;
+
+        this.handleUserInteraction();   // stop auto-scroll
+        isDragging = true;
+        track.classList.add('dragging');
+
+        startX     = e.clientX ?? e.touches?.[0].clientX;
+        prevOffset = -(this.currentIndex * this.slideAmount);
+        };
+
+        const pointerMove = (e) => {
+        if (!isDragging) return;
+        const x = e.clientX ?? e.touches?.[0].clientX;
+        const dx = x - startX;
+        liveOffset = prevOffset + dx;
+        /* Optional clamp so you can’t drag way past the ends: */
+        const maxOffset = 0;
+        const minOffset = -((this.totalCards - this.cardsPerView) * this.slideAmount);
+        track.style.transform = `translateX(${Math.max(minOffset, Math.min(maxOffset, liveOffset))}px)`;
+        };
+
+        const pointerUp = () => {
+        if (!isDragging) return;
+        isDragging = false;
+        track.classList.remove('dragging');
+
+        const movedBy = liveOffset - prevOffset;
+        const threshold = 50;   // px before we advance a card
+
+        if (movedBy < -threshold) {
+            this.moveToNextCard();  // swipe left → next
+        } else if (movedBy > threshold) {
+            this.moveToPrevCard();  // swipe right → prev
+        } else {
+            this.updateCardPositions();   // snap back
+        }
+        };
+
+        /* Pointer Events cover desktop + mobile (Safari 13.4+). */
+        track.addEventListener('pointerdown', pointerDown);
+        track.addEventListener('pointermove', pointerMove);
+        window.addEventListener('pointerup',   pointerUp);
+        window.addEventListener('pointercancel', pointerUp);
+    }
+  /* ---------- end of drag helpers ---------- */
+
 
     startAutoScroll() {
         // Clear any existing interval

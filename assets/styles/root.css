@@ -25,7 +25,7 @@
     --font-size-subheading-1: clamp(1.25rem, 4vw, 1.6rem);
     --font-size-subheading-2: clamp(1.125rem, 3vw, 1.4rem);
     --font-size-body: clamp(1rem, 2vw, 1.25rem);
-    --font-size-bio: clamp(0.96rem, 2vw, 1.18rem);
+    --font-size-bio: clamp(0.96rem, 2vw, 1.1rem);
     --font-size-small: clamp(0.6rem, 2vw, 1rem);
 
     /* Colors */
@@ -184,6 +184,10 @@ section, footer {
 
 .--w60px {
     width: 60px;
+}
+
+.--space-below {
+    margin-bottom: 1rem;
 }
 
 main {
