@@ -45,7 +45,7 @@ class TestimonialCarousel {
     updateView() {
         // Calculate cards per view based on screen width
         if (window.innerWidth >= 1280) {        // large desktop
-            this.cardsPerView = 3;
+            this.cardsPerView = 2;
         } else if (window.innerWidth >= 768) {  // tablet‑ish
             this.cardsPerView = 2;
         } else {                                // mobile
