@@ -21,8 +21,8 @@
 
 .testimonials__carousel {
     width: 100vw;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -31,18 +31,20 @@
 .testimonials__track {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    padding-left: 20px;
+
+    /* gap and padding are related to centeredness are related */
+    gap: 1rem;
 
     transition: transform 0.9s ease-in-out;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .testimonials__button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -52,7 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials__button.prev {
@@ -61,7 +63,6 @@
 
 .testimonials__button.next {
     right: 0px;
-    margin-right: 2rem;
 }
 
 /* TABLET */
@@ -71,10 +72,22 @@
         /* width: clamp(280px, 100vw, 1400px); */
         /* padding: 0 30px;
         padding-left: 2%; */
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .testimonials__track {
         /* padding-left: 1.5rem; */
+        gap: 3rem;
+    }
+
+    .testimonials__button.next {
+        right: 0px;
+        margin-right: 0.1rem;
+    }
+
+    .testimonials__button.prev {
+        margin-left: 0.1rem;
     }
 }
 
@@ -100,6 +113,7 @@
 .testimonials__card {
     flex: 0 0 auto;
     height: auto;
+    /* width set in testimonialCarousel.js */
     margin: 0 auto;
     padding: 1rem;
 
@@ -132,21 +146,18 @@
     filter: drop-shadow(0 0 3px #000);
 }
 
-.testimonials__author-name-verified {
+.testimonials__author-name-check {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    width: 100%;
-    gap: 1rem;
     justify-content: center;
 }
 
-.testimonials__author-name-verified--leah {
-    gap: 1rem;
+.testimonials__author-check {
+    margin-left: 0.4rem
 }
 
 .testimonials__author-name {
-    font-size: var(--font-size-subheading-2);
+    font-size: var(--font-size-subheading-1);
     text-align: center;
 }
 
@@ -223,6 +234,49 @@
         width: 50px;
         height: 50px;
         background: rgba(255, 255, 255, 0.6);
+    }
+
+    .testimonials__author {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .testimonials__author-name-check-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .testimonials__author-name-check {
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .testimonials__author-name-check--duenas {
+        gap: 0;
+    }
+
+    .testimonials__author-name {
+        font-size: var(--font-size-subheading-1);
+        text-align: left;
+
+        margin-top: 3rem;
+    }
+
+    .testimonials__author-name--duenas {
+        text-align: center;
+    }
+
+    .testimonials__author-check {
+        margin-top: 3rem;
+    }
+
+    .testimonials__author-title {
+        padding-right: 0;
     }
 }
 
