@@ -242,6 +242,11 @@
         gap: 1rem;
     }
 
+    .testimonials__author-headshot {
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+
     .testimonials__author-name-check-title {
         display: flex;
         flex-direction: column;
