@@ -3,15 +3,16 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-6) 100%);
-    padding-bottom: 0;
+    padding-bottom: 2rem;
 }
 
 .contact__title {
     padding: 0;
-    color: var(--font-color-black);
+    color: var(--font-color-grey1);
     filter: drop-shadow(0 0 1px #fff);
     border-top: none;
     border-bottom: none;
+    margin-bottom: 3rem;
 }
 
 .contact__form {

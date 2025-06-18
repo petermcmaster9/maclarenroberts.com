@@ -190,6 +190,10 @@ section, footer {
     margin-bottom: 1rem;
 }
 
+.--space-below-2 {
+    margin-bottom: 3rem;
+}
+
 main {
     flex: 1;
     margin: 0;
