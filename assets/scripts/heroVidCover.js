@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     videoCover.addEventListener('click', () => {
         videoCover.classList.add('hidden');
         // Update the iframe src to include autoplay
-        videoIframe.src = "https://player.vimeo.com/video/841753667?autoplay=1";
+        videoIframe.src = "https://player.vimeo.com/video/1197472023?autoplay=1";
     });
 });
